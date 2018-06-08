@@ -165,6 +165,8 @@
                 <div class="post-heading">
                     <div class="tags">
                         
+                          <a class="tag" href="/tags/#教程" title="教程">教程</a>
+                        
                     </div>
                     <h1>用 Hexo+NexT 搭建个人博客 (一)</h1>
                     <h2 class="subheading"></h2>
@@ -189,35 +191,44 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>​    有好多朋友问我我的博客是怎么建的, 我之前也答应过他们发一个教程, 但一直摸到现在, 今天闲来无事, 写一下在 Windows 端搭建博客的基本操作.</p>
-<h1 id="配置安装环境"><a href="#配置安装环境" class="headerlink" title="配置安装环境"></a>配置安装环境</h1><p>​    首先在下载 <a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Git</a>, 打开安装程序, 一路下一步, 直到安装完成.</p>
-<p>​    之后, 下载 <a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a>, 同样也是一路下一步, 直到安装完成.</p>
-<p>​    两个都安装完成后, 按Win+R 键打开”运行”, 输入 cmd 打开命令提示符. </p>
-<p>​    打开后, 输入 <code>npm install -g hexo-cli</code> , 等待安装完成即可配置好 Hexo.</p>
-<p>​    这些步骤在<a href="https://hexo.io" target="_blank" rel="noopener">官方网站</a>里都有详细的方法, 我这里如果理解不了的话可以去参考一下官方的教程.</p>
-<h1 id="创建网站文件夹"><a href="#创建网站文件夹" class="headerlink" title="创建网站文件夹"></a>创建网站文件夹</h1><p>​    在 cmd 中, 利用 <code>cd</code> 指令来选择自己想要创建 Hexo 文件夹的目录, 之后输入<code>hexo init &lt;folder&gt;</code> 来创建 Hexo 文件夹, 例如:</p>
-<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">d:</span>	                     <span class="comment">//定位到 D 盘</span></span><br><span class="line">hexo init myblog		<span class="comment">//创建 Hexo 文件夹</span></span><br></pre></td></tr></table></figure>
-<p>这样,在 D 盘就会生成一个名为 myblog 的文件夹.</p>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>有好多朋友问我我的博客是怎么建的, 我之前也答应过他们发一个教程, 但一直摸到现在, 今天闲来无事, 写一下在 Windows 端搭建博客的基本操作.<a id="more"></a></p>
+<h2 id="配置安装环境"><a href="#配置安装环境" class="headerlink" title="配置安装环境"></a>配置安装环境</h2><p>首先下载 <a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Git</a>, 打开安装程序, 一路下一步, 直到安装完成.</p>
+<p>之后, 下载 <a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a>, 同样也是一路下一步, 直到安装完成.</p>
+<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>两个都安装完成后, 按 <code>Win+R</code> 键打开”运行”, 输入 <code>cmd</code> 打开命令提示符. </p>
+<p>打开后, 输入 <code>npm install -g hexo-cli</code> , 等待安装完成即可配置好 Hexo.</p>
+<p>​这些步骤在<a href="https://hexo.io" target="_blank" rel="noopener">官方网站</a>里都有详细的方法, 我这里如果理解不了的话可以去参考一下官方的教程.</p>
+<h2 id="创建-Hexo-文件夹"><a href="#创建-Hexo-文件夹" class="headerlink" title="创建 Hexo 文件夹"></a>创建 Hexo 文件夹</h2><p>在 cmd 中, 利用 <code>cd</code> 指令来选择自己想要创建 Hexo 文件夹的目录, 之后输入<code>hexo init &lt;folder&gt;</code> 来创建 Hexo 文件夹, 例如:</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">d:</span>	<span class="comment">//定位到 D 盘</span></span><br><span class="line">hexo init myblog	<span class="comment">//创建 Hexo 文件夹</span></span><br></pre></td></tr></table></figure>
+<p>这样,在 D 盘就会生成一个名为 <code>myblog</code> 的文件夹.</p>
 <p>*之后的教程会以 D 盘的这个文件夹为例, 在别处建的话就要定位到目标目录下, 其余的步骤一样.</p>
-<h1 id="编辑-config-yml"><a href="#编辑-config-yml" class="headerlink" title="编辑 _config.yml"></a>编辑 _config.yml</h1><p>​    其实现在的 Blog 已经可以访问了, 在 cmd 中定位到 Hexo 文件夹 ( <code>cd d:\</code>  <code>cd myblog</code> ) , 输入 <code>hexo s</code> 即可在本地生成网页, 在浏览器地址栏中输入 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 即可访问, 若要停止, 在命令窗口中按 Ctrl+C 即可.</p>
-<p>​    ……有点跑偏了, 我们继续, 打开 myblog 文件夹下的 _config.yml (这里推荐使用Notepad++) , 会发现里面的# site 一栏有以下几项: </p>
-<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># Site</span></span><br><span class="line"><span class="symbol">title:</span>                                                  <span class="comment">//网站标题</span></span><br><span class="line"><span class="symbol">subtitle:</span> 											<span class="comment">//网站副标题</span></span><br><span class="line"><span class="symbol">description:</span> 										<span class="comment">//网站描述</span></span><br><span class="line"><span class="symbol">keywords:</span> </span><br><span class="line"><span class="symbol">author:</span> 										    <span class="comment">//博主的名字</span></span><br><span class="line"><span class="symbol">language:</span> 										    <span class="comment">//网站语言</span></span><br><span class="line"><span class="symbol">timezone:</span> 										    <span class="comment">//网站时区</span></span><br></pre></td></tr></table></figure>
-<p>​    现在要做的就是填好这几项, 一般我的 keywords 和 timezone 留空不填, language填 <code>zh-Hans</code> , <strong>注意, 这里的冒号后面要加空格, 是 <code>title: test</code> 而不是 <code>title:test</code></strong> , 编辑好后, Ctrl+C 保存.</p>
-<h1 id="注册-GitHub-账号-amp-创建-GitHub-仓库"><a href="#注册-GitHub-账号-amp-创建-GitHub-仓库" class="headerlink" title="注册 GitHub 账号 &amp; 创建 GitHub 仓库"></a>注册 GitHub 账号 &amp; 创建 GitHub 仓库</h1><h2 id="注册-GitHub-账号"><a href="#注册-GitHub-账号" class="headerlink" title="注册 GitHub 账号"></a>注册 GitHub 账号</h2><p>​    首先, 打开 <a href="https://github.com" target="_blank" rel="noopener">GitHub</a> , 输入 Username 和你的邮箱 (Email) , 最后在 Password 一栏输入你的密码, 最后点击 Sign up for Github, 即可完成注册. 一路下一步, 会提示你验证邮箱, 验证即可.</p>
-<h2 id="创建-GitHub-仓库"><a href="#创建-GitHub-仓库" class="headerlink" title="创建 GitHub 仓库"></a>创建 GitHub 仓库</h2><p>​    在新的页面点击 Start a Project, 会转到新建仓库的页面, Repository name 那一栏填<code>你的GitHub ID.github.io</code> , 例如 <code>ricky2004.github.io</code> , 填好后勾选 “Initialize this repository with a README”, 点击 Create repository 即可创建好仓库.</p>
-<h1 id="检查-GitHub-Pages-是否配置正确"><a href="#检查-GitHub-Pages-是否配置正确" class="headerlink" title="*检查 GitHub Pages 是否配置正确"></a>*检查 GitHub Pages 是否配置正确</h1><p>​    创建好仓库后,转到 Settings, 往下拉, 找到 GitHub Pages 一项, 应该会显示”Your site is ready to be published at <a href="https://yourid.github.io/" target="_blank" rel="noopener">https://yourid.github.io/</a>. “, 这时等待几分钟, 会显示” Your site is published at <a href="https://yourid.github.io/" target="_blank" rel="noopener">https://yourid.github.io/</a> “, 这样, 你的 GitHub Pages 就已经可以访问了.</p>
-<h1 id="配置-Deployment"><a href="#配置-Deployment" class="headerlink" title="配置 Deployment"></a>配置 Deployment</h1><p>​    首先在 cmd 中定位到 Hexo 文件夹下, 输入 <code>npm install hexo-deployer-git --save</code> 来安装 hexo-deployer-git.</p>
-<p>​    等待安装完成后, 打开 Hexo 文件夹中的 _config.yml , 在文档末尾找到 # Deployment 一栏,如下:</p>
+<h2 id="编辑-config-yml"><a href="#编辑-config-yml" class="headerlink" title="编辑 _config.yml"></a>编辑 _config.yml</h2><p>其实现在的 Blog 已经可以访问了, 在 cmd 中定位到 Hexo 文件夹 ( <code>d:</code>  <code>cd myblog</code> ) , 输入 <code>hexo s</code> 即可在本地生成网页, 在浏览器地址栏中输入 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 即可访问, 若要停止, 在命令窗口中按 Ctrl+C 即可.</p>
+<p>……有点跑偏了, 我们继续, 打开 myblog 文件夹下的 <code>_config.yml</code> (这里推荐使用Notepad++) , 会发现里面的# site 一栏有以下几项: </p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># Site</span></span><br><span class="line"><span class="symbol">title:</span>	<span class="comment">//网站标题</span></span><br><span class="line"><span class="symbol">subtitle:</span>	<span class="comment">//网站副标题</span></span><br><span class="line"><span class="symbol">description:</span>	<span class="comment">//网站描述</span></span><br><span class="line"><span class="symbol">keywords:</span> </span><br><span class="line"><span class="symbol">author:</span>    <span class="comment">//博主的名字</span></span><br><span class="line"><span class="symbol">language:</span>	<span class="comment">//网站语言</span></span><br><span class="line"><span class="symbol">timezone:</span>	<span class="comment">//网站时区</span></span><br></pre></td></tr></table></figure>
+<p>现在要做的就是填好这几项, 一般我的 keywords 和 timezone 留空不填, language填 <code>zh-Hans</code> , <strong>注意, 所有的冒号后面要加空格, 是 <code>title: test</code> 而不是 <code>title:test</code></strong> , 编辑好后, 按 Ctrl+C 保存.</p>
+<h2 id="注册-GitHub-账号-amp-创建-GitHub-仓库"><a href="#注册-GitHub-账号-amp-创建-GitHub-仓库" class="headerlink" title="注册 GitHub 账号 &amp; 创建 GitHub 仓库"></a>注册 GitHub 账号 &amp; 创建 GitHub 仓库</h2><h3 id="注册-GitHub-账号"><a href="#注册-GitHub-账号" class="headerlink" title="注册 GitHub 账号"></a>注册 GitHub 账号</h3><p>首先, 打开 <a href="https://github.com" target="_blank" rel="noopener">GitHub</a> , 输入 Username (用户名) 和 Email (邮箱地址) , 最后在 “Password” 一栏输入你的密码, 最后点击 “Sign up for Github”, 即可完成注册. 一路下一步, 会提示你验证邮箱, 验证即可.</p>
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1frwz7j1to8j30xd0h0761.jpg" alt="创建 GitHub 账号"></p>
+<h3 id="创建-GitHub-仓库"><a href="#创建-GitHub-仓库" class="headerlink" title="创建 GitHub 仓库"></a>创建 GitHub 仓库</h3><p>在新的页面点击 <code>Start a Project</code>, 会转到新建仓库的页面, <code>Repository name</code> 那一栏填 <code>yourid.github.io</code> , 例如 <code>ricky2004.github.io</code> , 填好后勾选 <code>Initialize this repository with a README</code>, 点击 <code>Create repository</code> 即可创建好仓库.</p>
+<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1frwz884byoj30ob0hjq3y.jpg" alt="创建 GitHub 仓库"></p>
+<h2 id="检查-GitHub-Pages-是否配置正确"><a href="#检查-GitHub-Pages-是否配置正确" class="headerlink" title="*检查 GitHub Pages 是否配置正确"></a>*检查 GitHub Pages 是否配置正确</h2><p>创建好仓库后,转到 Settings, 往下拉, 找到 GitHub Pages 一项, 应该会显示 <code>Your site is ready to be published at  https://yourid.github.io/</code> , 这时等待几分钟, 会显示 <code>Your site is published at &lt;https://yourid.github.io/&gt;</code> , 这样, 你的 GitHub Pages 就已经可以访问了.</p>
+<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1frwza7ylf7j30vl08djrw.jpg" alt="转到 Settings"></p>
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1frwz9kw5mpj30m80j3q3y.jpg" alt=""></p>
+<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1frwz9w7iavj30n20itdgu.jpg" alt=""></p>
+<h2 id="配置-Deployment"><a href="#配置-Deployment" class="headerlink" title="配置 Deployment"></a>配置 Deployment</h2><p>首先在 cmd 中定位到 Hexo 文件夹下, 输入 <code>npm install hexo-deployer-git --save</code> 来安装 hexo-deployer-git.</p>
+<p>等待安装完成后, 打开 Hexo 文件夹中的 <code>_config.yml</code> , 在文档末尾找到 # Deployment 一栏,如下:</p>
 <figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># Deployment</span></span><br><span class="line"><span class="meta">## Docs: https:<span class="comment">//hexo.io/docs/deployment.html</span></span></span><br><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  type:</span></span><br></pre></td></tr></table></figure>
-<p>​    在 type: 后面输入<code>git</code> , 回车, 在下面一行输入 <code>repo:</code> (注意缩进) , repo: 后面填你的 GitHub 仓库地址, 再回车, 输入 <code>branch:</code> , 后面填 <code>master</code> , 例如:</p>
+<p>在 <code>type:</code> 后面输入 <code>git</code> , 回车, 在下面一行输入 <code>repo:</code> , <code>repo:</code>  后面填你的 GitHub 仓库地址, 再回车, 输入 <code>branch:</code> , 后面填 <code>master</code> , 例如:</p>
 <figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># Deployment</span></span><br><span class="line"><span class="meta">## Docs: https:<span class="comment">//hexo.io/docs/deployment.html</span></span></span><br><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  type:</span> git</span><br><span class="line"><span class="symbol">  repo:</span> https:<span class="comment">//github.com/ricky2004/ricky2004.github.io</span></span><br><span class="line"><span class="symbol">  branch:</span> master</span><br></pre></td></tr></table></figure>
-<p>​    这些都填好后, 保存, 在 cmd 中输入:</p>
+<p>这些都填好后, 保存, 在 cmd 中输入:</p>
 <figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean	<span class="comment">//清理 public 文件夹</span></span><br><span class="line">hexo g	<span class="comment">//创建静态页面</span></span><br><span class="line">hexo d	<span class="comment">//部署</span></span><br></pre></td></tr></table></figure>
-<p>​    或者可以一步到位:</p>
+<p>或者可以一步到位:</p>
 <figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean <span class="meta">&amp;&amp; hexo g &amp;&amp; hexo d</span></span><br></pre></td></tr></table></figure>
-<p>​    第一次部署会弹出窗口要求你输入 GitHub 账号和密码, 输入即可.</p>
-<p>​    等待部署完毕.</p>
-<h1 id="Enjoy"><a href="#Enjoy" class="headerlink" title="Enjoy!"></a>Enjoy!</h1><p>​    这时,访问 <code>yourid.github.io</code> , 就会发现你的 Blog 已经成功创建好了.</p>
+<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1frwzbtof9dj30rl0ef3z5.jpg" alt=""></p>
+<p>第一次部署会弹出窗口要求你输入 GitHub 账号和密码, 输入即可.</p>
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1frwzbc1z2ij30bo0bo0sv.jpg" alt=""></p>
+<p>等待部署完毕.</p>
+<h2 id="Enjoy"><a href="#Enjoy" class="headerlink" title="Enjoy!"></a>Enjoy!</h2><p>这时,访问 <code>yourid.github.io</code> , 就会发现你的 Blog 已经成功创建好了.</p>
+<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1frwzcgy9dwj31hc0u0gw5.jpg" alt=""></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本方法就是把在本地生成好的博客文件夹上传到 GitHub 托管, 因为 GitHub 有提供 GitHub Pages (简称 GH-Pages), 而 GH-Pages 里的内容就是你仓库里的文件, 所以, 上传文件后, 你的 GItHub 仓库地址 (或 GH-Pages 域名) 就是你的博客域名. 第二部分会写如何绑定自己的域名, 以及如何写博文. <del>(又要摸了)</del></p>
 
 
                 <hr>
@@ -257,6 +268,8 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
+                          <a class="tag" href="/tags/#教程" title="教程">教程</a>
+                        
                     </div>
                 </section>
                 
@@ -268,7 +281,7 @@
                 <ul class="list-inline">
 
                     
-                        <li><a href="https://ricky29.tech" target="_blank">MAGiC</a></li>
+                        <li><a href="https://hexo.io" target="_blank">Hexo</a></li>
                     
                 </ul>
                 
