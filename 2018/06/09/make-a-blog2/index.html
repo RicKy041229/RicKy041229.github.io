@@ -194,33 +194,33 @@
                 <h2 id="I’m-Back"><a href="#I’m-Back" class="headerlink" title="I’m Back."></a>I’m Back.</h2><p>弃坑一周, 我又回来写教程了.</p>
 <h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><p>这一篇写的是把自己的域名绑定到 Blog, 就是在访问自己的域名时解析到 <code>yourid.github.io</code> (CNAME). 其次, 就是如何在自己的 Blog 写下第一篇文章.</p>
 <h2 id="绑定自定义域名"><a href="#绑定自定义域名" class="headerlink" title="绑定自定义域名"></a>绑定自定义域名</h2><h3 id="创建-CNAME-文件"><a href="#创建-CNAME-文件" class="headerlink" title="创建 CNAME 文件"></a>创建 CNAME 文件</h3><p>在你的 Blog 文件夹的 source 文件夹下, 新建一个名为 CNAME 的文件, 不要有后缀. (建个 .txt 的文本文档去掉后缀就好了)</p>
-<p>新建好后, 右键 <code>Edit with Notepad++</code> 打开, 在第一行输入你的域名, <code>Ctrl+S</code> 保存.<img src="http://ws3.sinaimg.cn/large/006K8hJGgy1fs59xzpopzj30uk0ml0tb.jpg" alt=""></p>
+<p>新建好后, 右键 <code>Edit with Notepad++</code> 打开, 在第一行输入你的域名, <code>Ctrl+S</code> 保存.<img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs59xzpopzj30uk0ml0tb.jpg" alt=""></p>
 <p>这样, 这个步骤就完成了一半了.</p>
 <h3 id="GitHub-仓库设置"><a href="#GitHub-仓库设置" class="headerlink" title="GitHub 仓库设置"></a>GitHub 仓库设置</h3><p>打开 GitHub 仓库, 转到设置, 在 <code>GitHub Pages</code> 一栏找到 <code>Custom domain</code> , 把自己的域名填到框里, SAVE 保存即可.</p>
-<p><img src="http://ws3.sinaimg.cn/large/006K8hJGgy1fs5a1t9rv6j30ns0j2my6.jpg" alt=""></p>
+<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5a1t9rv6j30ns0j2my6.jpg" alt=""></p>
 <h3 id="配置域名解析"><a href="#配置域名解析" class="headerlink" title="配置域名解析"></a>配置域名解析</h3><p>这里我推荐使用 <a href="https://www.cloudflare.com/">Cloudflare</a>, 因为它可以提供 HTTPS 和免费的 SSL 证书, 打开网站, 注册登录不用我详细介绍了, 能有一点英语基础的人都可以做到.</p>
 <p>登录后会转到个人的主页, 点击 <code>+ Add a Site</code> 来添加一个域名, 输入域名后点确认, 一路下一步, <code>Select a Plan</code> 那里选 FREE, 然后点确认, 弹出的框中点 Purchase.</p>
 <p>之后会转到下面这样一个页面: </p>
-<p><img src="http://ws3.sinaimg.cn/large/006K8hJGgy1fs5b9p6biuj30w80p5go1.jpg" alt=""></p>
+<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5b9p6biuj30w80p5go1.jpg" alt=""></p>
 <p>把这些都删掉, 在 Name 那一栏填你的域名; IPv4 address 如何获取, 我来说一下: </p>
-<h4 id="获取IPv4-address"><a href="#获取IPv4-address" class="headerlink" title="获取IPv4 address"></a>获取IPv4 address</h4><p>打开 cmd, 输入 <code>ping yourid.github.io</code> , 所得出的 IP 地址 即是你的 IPv4 address. 如图: </p>
-<p><img src="http://ws3.sinaimg.cn/large/006K8hJGgy1fs5bdqq4g2j30hn03ra9z.jpg" alt=""></p>
+<h4 id="获取-IPv4-address"><a href="#获取-IPv4-address" class="headerlink" title="获取 IPv4 address"></a>获取 IPv4 address</h4><p>打开 cmd, 输入 <code>ping yourid.github.io</code> , 所得出的 IP 地址 即是你的 IPv4 address. 如图: </p>
+<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5bdqq4g2j30hn03ra9z.jpg" alt=""></p>
 <h4 id="继续"><a href="#继续" class="headerlink" title="继续"></a>继续</h4><p>把 IPv4 address 填好后, 点击 Add Record.即可添加一条解析.</p>
 <p>同样的方法, Name 那一栏填 www, IPv4 address 还是那个, 再建立一条.</p>
 <p>最后点击 Continue 即可.</p>
 <p>进入 Overview, 域名那一栏的黑体字就是你的解析 DNS, 把它们填到域名服务商那里, 之后等待解析生效.</p>
 <h4 id="配置-Page-Rules"><a href="#配置-Page-Rules" class="headerlink" title="配置 Page Rules"></a>配置 Page Rules</h4><p>在顶栏找到 Page Rules.</p>
-<p><img src="http://ws3.sinaimg.cn/large/006K8hJGgy1fs5bkm3hkbj30uy04g0sy.jpg" alt=""></p>
+<p><img src="https://ws4.sinaimg.cn/large/006tKfTcgy1fs5zljcrlkj30t303ymxi.jpg" alt=""></p>
 <p>点击 Create Page Rule, 创建两条, 配置按下图填写:</p>
-<p><img src="http://ws3.sinaimg.cn/large/006K8hJGgy1fs5bmszhcbj30o90f8t9r.jpg" alt=""></p>
-<p><img src="http://ws3.sinaimg.cn/large/006K8hJGgy1fs5bn7m333j30oa0eiab2.jpg" alt=""></p>
+<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5bmszhcbj30o90f8t9r.jpg" alt=""></p>
+<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5bn7m333j30oa0eiab2.jpg" alt=""></p>
 <p>注意: 域名要填自己的! </p>
 <h3 id="大功告成"><a href="#大功告成" class="headerlink" title="大功告成!"></a>大功告成!</h3><p>现在, 你只需要等待解析生效, 你就可以通过你自己的域名访问博客了.</p>
 <h2 id="年轻人的第一篇博文"><a href="#年轻人的第一篇博文" class="headerlink" title="年轻人的第一篇博文"></a>年轻人的第一篇博文</h2><h3 id="新建-Markdown-文档"><a href="#新建-Markdown-文档" class="headerlink" title="新建 Markdown 文档"></a>新建 Markdown 文档</h3><p>在你的 Hexo 文件夹中输入 <code>hexo new title</code> 即可创建一个文档, <code>title</code> 即是文档名.</p>
-<p><img src="http://ws3.sinaimg.cn/large/006K8hJGgy1fs5bsftpn4j30dy026gle.jpg" alt=""></p>
+<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5bsftpn4j30dy026gle.jpg" alt=""></p>
 <h3 id="打开文档并写作"><a href="#打开文档并写作" class="headerlink" title="打开文档并写作"></a>打开文档并写作</h3><p>文档生成在 <code>blog/source/</code> 下.</p>
 <p>这里打开 .md 文档我推荐使用 <a href="https://typora.io/">Typora</a>, 打开后, 会看到如下内容: </p>
-<p><img src="http://ws3.sinaimg.cn/large/006K8hJGgy1fs5bv9r6csj30m80gowel.jpg" alt=""></p>
+<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5bv9r6csj30m80gowel.jpg" alt=""></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>没有特殊需要的话只改标题就可以, 写作并保存后, 使用 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code> 命令即可部署到 GitHub, 耐心等待几分钟后, 文章便呈现在了博客上.</p>
 <h2 id="The-End"><a href="#The-End" class="headerlink" title="The End."></a>The End.</h2><p><del>又要摸了.</del></p>
