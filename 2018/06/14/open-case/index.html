@@ -50,6 +50,11 @@
 
     <!-- ga & ba script hoook -->
     <script></script>
+
+    <!-- donate JS -->
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/core.js"></script>
+    <link rel="stylesheet" href="https://spencerwoo.com/css/donate.css">
+    <script src="https://spencerwoo.com/js/donate.js"></script>
 </head>
 
 
@@ -90,14 +95,14 @@
 
                         
                         <li>
-                            <a href="/archives/">Archives</a>
+                            <a href="/about/">ABOUT</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/about/">ABOUT</a>
+                            <a href="/archives/">Archives</a>
                         </li>
                         
                     
@@ -241,25 +246,24 @@
 
 
                 <hr>
-
-<!-- donate code -->
+    <!-- donate code -->
 <script src="/js/jquery.min.js">
 </script><link rel="stylesheet" href="https://spencerwoo.com/css/donate.css">
 <script src="https://spencerwoo.com/js/donate.js"></script>
 
 <div class="post_reward" >
-<label class="reward_btn">请喝咖啡</label>
-<div class="qr_code">
-<div class="qr_code_img">
-<img class="image" src="https://ws3.sinaimg.cn/large/006tKfTcly1fsgsp2avwkj30pg0phwj7.jpg" title="WeChat">
-</div>
+    <label class="reward_btn">请喝咖啡</label>
+    <div class="qr_code">
+        <div class="qr_code_img">
+            <img class="image" src="https://ws3.sinaimg.cn/large/006tKfTcly1fsgsp2avwkj30pg0phwj7.jpg" title="WeChat">
+        </div>
 
-<div class="qr_code_img">
-<img class="image" src="https://ws2.sinaimg.cn/large/006tKfTcly1fsgsp22mfqj30pg0ph0x8.jpg" title="AliPay">
-</div>
-<div class="powered_text">
-Powered by <a href="https://github.com/spencerwoo98/sexy-donate">SexyDonate</a>
-</div>
+        <div class="qr_code_img">
+            <img class="image" src="https://ws2.sinaimg.cn/large/006tKfTcly1fsgsp22mfqj30pg0ph0x8.jpg" title="AliPay">
+        </div>
+    <div class="powered_text">
+    Powered by <a href="https://github.com/spencerwoo98/sexy-donate">SexyDonate</a>
+        </div>
 </div>
 
 
@@ -357,9 +361,9 @@ Powered by <a href="https://github.com/spencerwoo98/sexy-donate">SexyDonate</a>
 <script>
     async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
         anchors.options = {
-          visible: 'always',
+          visible: 'never',
           placement: 'right',
-          icon: '#'
+          icon: 
         };
         anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
     })
@@ -419,16 +423,14 @@ Powered by <a href="https://github.com/spencerwoo98/sexy-donate">SexyDonate</a>
                 <p class="copyright text-muted">
                     Copyright &copy; MAGiC 2018 
                     <br>
-                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    Powered by <a href="https://hexo.io">Hexo</a>
                     <span style="display: inline-block; margin: 0 5px;">
-                        <i class="fa fa-heart"></i>
+                        <i class="fa fa-star"></i>
                     </span> 
-                    Ported by <a href="http://blog.kaijun.rocks">Kaijun</a> | 
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="91px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=kaijun&repo=hexo-theme-huxblog&type=star&count=true" >
-                    </iframe>
+                    Ported by <a href="https://ricky29.tech">RicKy</a><br>
+                    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                    Image by <a href="https://Unsplash.com">Unsplash</a><br>
+                    <span id="busuanzi_container_site_pv">什么?! 我的博客居然被访问了 <span id="busuanzi_value_site_pv"></span> 次耶</span>
                 </p>
             </div>
         </div>
