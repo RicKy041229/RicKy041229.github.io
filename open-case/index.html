@@ -13,11 +13,11 @@
 
     <title>
         
-          用 Hexo+NexT 搭建个人博客 (二) - MAGiC | Never Give Up!
+          薅羊毛的收获~ - MAGiC | Never Give Up!
         
     </title>
 
-    <link rel="canonical" href="https://ricky29.tech/2018/06/09/make-a-blog2/">
+    <link rel="canonical" href="https://ricky29.tech/open-case/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -107,7 +107,7 @@
 
                         
                         <li>
-                            <a href="/diary/">ONLY 8 DAYS</a>
+                            <a href="/diary/">ONLY 7 DAYS</a>
                         </li>
                         
                     
@@ -172,7 +172,7 @@
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
-        background-image: url('blog2.jpg')
+        background-image: url('case.jpg')
     }
 </style>
 <header class="intro-header" >
@@ -182,14 +182,14 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                          <a class="tag" href="/tags/#教程" title="教程">教程</a>
+                          <a class="tag" href="/tags/#开箱" title="开箱">开箱</a>
                         
                     </div>
-                    <h1>用 Hexo+NexT 搭建个人博客 (二)</h1>
-                    <h2 class="subheading">搭建博客的教程 Part2</h2>
+                    <h1>薅羊毛的收获~</h1>
+                    <h2 class="subheading">快递拿到手软!</h2>
                     <span class="meta">
                         Posted by RicKy on
-                        2018-06-09
+                        2018-06-14
                     </span>
                 </div>
             </div>
@@ -208,50 +208,50 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h2 id="I’m-Back"><a href="#I’m-Back" class="headerlink" title="I’m Back."></a>I’m Back.</h2><p>弃坑一周, 我又回来写教程了.</p>
-<h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><p>这一篇写的是把自己的域名绑定到 Blog, 就是在访问自己的域名时解析到 <code>yourid.github.io</code> (CNAME). 其次, 就是如何在自己的 Blog 写下第一篇文章.</p>
-<h2 id="绑定自定义域名"><a href="#绑定自定义域名" class="headerlink" title="绑定自定义域名"></a>绑定自定义域名</h2><h3 id="创建-CNAME-文件"><a href="#创建-CNAME-文件" class="headerlink" title="创建 CNAME 文件"></a>创建 CNAME 文件</h3><p>在你的 Blog 文件夹的 source 文件夹下, 新建一个名为 CNAME 的文件, 不要有后缀. (建个 .txt 的文本文档去掉后缀就好了)</p>
-<p>新建好后, 右键 <code>Edit with Notepad++</code> 打开, 在第一行输入你的域名, <code>Ctrl+S</code> 保存.<img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs59xzpopzj30uk0ml0tb.jpg" alt=""></p>
-<p>这样, 这个步骤就完成了一半了.</p>
-<h3 id="GitHub-仓库设置"><a href="#GitHub-仓库设置" class="headerlink" title="GitHub 仓库设置"></a>GitHub 仓库设置</h3><p>打开 GitHub 仓库, 转到设置, 在 <code>GitHub Pages</code> 一栏找到 <code>Custom domain</code> , 把自己的域名填到框里, SAVE 保存即可.</p>
-<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5a1t9rv6j30ns0j2my6.jpg" alt=""></p>
-<h3 id="配置域名解析"><a href="#配置域名解析" class="headerlink" title="配置域名解析"></a>配置域名解析</h3><p>这里我推荐使用 <a href="https://www.cloudflare.com/">Cloudflare</a>, 因为它可以提供 HTTPS 和免费的 SSL 证书, 打开网站, 注册登录不用我详细介绍了, 能有一点英语基础的人都可以做到.</p>
-<p>登录后会转到个人的主页, 点击 <code>+ Add a Site</code> 来添加一个域名, 输入域名后点确认, 一路下一步, <code>Select a Plan</code> 那里选 FREE, 然后点确认, 弹出的框中点 Purchase.</p>
-<p>之后会转到下面这样一个页面: </p>
-<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5b9p6biuj30w80p5go1.jpg" alt=""></p>
-<p>把这些都删掉, 在 Name 那一栏填你的域名; IPv4 address 如何获取, 我来说一下: </p>
-<h4 id="获取-IPv4-address"><a href="#获取-IPv4-address" class="headerlink" title="获取 IPv4 address"></a>获取 IPv4 address</h4><p>打开 cmd, 输入 <code>ping yourid.github.io</code> , 所得出的 IP 地址 即是你的 IPv4 address. 如图: </p>
-<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5bdqq4g2j30hn03ra9z.jpg" alt=""></p>
-<h4 id="继续"><a href="#继续" class="headerlink" title="继续"></a>继续</h4><p>把 IPv4 address 填好后, 点击 Add Record.即可添加一条解析.</p>
-<p>同样的方法, Name 那一栏填 www, IPv4 address 还是那个, 再建立一条.</p>
-<p>最后点击 Continue 即可.</p>
-<p>进入 Overview, 域名那一栏的黑体字就是你的解析 DNS, 把它们填到域名服务商那里, 之后等待解析生效.</p>
-<h4 id="配置-Page-Rules"><a href="#配置-Page-Rules" class="headerlink" title="配置 Page Rules"></a>配置 Page Rules</h4><p>在顶栏找到 Page Rules.</p>
-<p><img src="https://ws4.sinaimg.cn/large/006tKfTcgy1fs5zljcrlkj30t303ymxi.jpg" alt=""></p>
-<p>点击 Create Page Rule, 创建两条, 配置按下图填写:</p>
-<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5bmszhcbj30o90f8t9r.jpg" alt=""></p>
-<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5bn7m333j30oa0eiab2.jpg" alt=""></p>
-<p>注意: 域名要填自己的! </p>
-<h3 id="大功告成"><a href="#大功告成" class="headerlink" title="大功告成!"></a>大功告成!</h3><p>现在, 你只需要等待解析生效, 你就可以通过你自己的域名访问博客了.</p>
-<h2 id="年轻人的第一篇博文"><a href="#年轻人的第一篇博文" class="headerlink" title="年轻人的第一篇博文"></a>年轻人的第一篇博文</h2><h3 id="新建-Markdown-文档"><a href="#新建-Markdown-文档" class="headerlink" title="新建 Markdown 文档"></a>新建 Markdown 文档</h3><p>在你的 Hexo 文件夹中输入 <code>hexo new title</code> 即可创建一个文档, <code>title</code> 即是文档名.</p>
-<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5bsftpn4j30dy026gle.jpg" alt=""></p>
-<h3 id="打开文档并写作"><a href="#打开文档并写作" class="headerlink" title="打开文档并写作"></a>打开文档并写作</h3><p>文档生成在 <code>blog/source/</code> 下.</p>
-<p>这里打开 .md 文档我推荐使用 <a href="https://typora.io/">Typora</a>, 打开后, 会看到如下内容: </p>
-<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5bv9r6csj30m80gowel.jpg" alt=""></p>
-<figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: test	    //文章标题</span><br><span class="line">date:               //创建时间</span><br><span class="line"><span class="keyword">tags:</span>               //标签</span><br></pre></td></tr></table></figure>
-<p>没有特殊需要的话只改标题就可以, 写作并保存后, 使用 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code> 命令即可部署到 GitHub, 耐心等待几分钟后, 文章便呈现在了博客上.</p>
-<h2 id="The-End"><a href="#The-End" class="headerlink" title="The End."></a>The End.</h2><p><del>又要摸了.</del></p>
-<p>和之前一样, 如果有纰漏, 欢迎联系我修改, 第三部分准备写 <code>配置 NexT 主题</code> 以及 <code>评论系统的添加</code> .</p>
+                <!-- fuckkk -->
+<blockquote>
+<p>我可能是薅了只羊回来.</p>
+</blockquote>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言~"></a>前言~</h2><p>前几天在酷安话题 #薅羊毛小分队# 里看到了一些人用不到一元钱买了好多东西, 于是我也试了一下, 真的, 我可能被列入那个快递员的「派送黑名单」了.</p>
+<p><img src="https://ws1.sinaimg.cn/large/006tNc79gy1fsb0pv05gij31kw23vhdx.jpg" alt="肥宅购物车"></p>
+<p><p align="center"><del>肥宅购物车</del><p></p>
+<p>本次评测的东西有: 竹炭狗、手机支架、《三体》、蓝牙耳机.</p>
+<h2 id="评测"><a href="#评测" class="headerlink" title="评测"></a>评测</h2><h3 id="竹炭狗"><a href="#竹炭狗" class="headerlink" title="竹炭狗"></a>竹炭狗</h3><p>来自<a href="https://www.tuhu.cn/">途虎养车</a>.</p>
+<p>看起来就是个毛绒玩具, 竹炭我也不知道有什么作用, 但我还是弄了大概有 14 只…目前还在考虑怎么处理.</p>
+<p><img src="https://ws1.sinaimg.cn/large/006tNc79gy1fsb0yhjfugj31kw16onph.jpg" alt=""></p>
+<p>里面是泡沫填充, 和棉花有点区别, 拿来摆放观赏不错, 拿来把玩的话就算了, 泡沫可能会漏出来, 很不好清理. 背面有途虎养车的 Logo, 有的线头没剪, 眼睛看起来有点脏, 但一分钱的东西, 没必要这么吹毛求疵.</p>
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79gy1fsb0zcfp6yj31kw23vqv9.jpg" alt=""></p>
+<h3 id="手机支架"><a href="#手机支架" class="headerlink" title="手机支架"></a>手机支架</h3><p>同样也来自途虎养车.</p>
+<p>手机支架和竹炭狗有很大的不同, 做工看起来很好, 固定也牢固. 放在显示器旁, 手机放在上面, 查看一些内容很方便.</p>
+<p>红白的配色搭配的不错, 中间有途虎养车的 Logo, 总之, 外观上可以让人接受, 实用性也不错.</p>
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79gy1fsb11sa3m4j31kw23v7wm.jpg" alt=""></p>
+<h3 id="《三体》"><a href="#《三体》" class="headerlink" title="《三体》"></a>《三体》</h3><p>来自 <code>微信: 斜杠书社</code> .</p>
+<p>就是公众号拉人气送的东西, 获得的规则是公众号会发给你个二维码, 发给别人, 当 37 个人齐了之后, 就可以兑换一套《三体》.</p>
+<p>我当然是不会发的, 会让别人觉得我像个傻逼, 还好我有个专门刷这个的朋友, 让他给我刷够了关注, 顺利地得到了. </p>
+<p>是不是正版我不知道, 但书的印刷还是不错的, 就是封面受暴力快递的影响有点褶皱, 不过无伤大雅. 内容的话…我暂时还没时间看.</p>
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79gy1fsb1d9szuuj31kw16ou11.jpg" alt=""></p>
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79gy1fsb1diui4vj31kw23vx6t.jpg" alt=""></p>
+<h3 id="蓝牙耳机"><a href="#蓝牙耳机" class="headerlink" title="蓝牙耳机"></a>蓝牙耳机</h3><p>来自 <a href="https://haitao.ebay.com/">eBay 海淘</a>.</p>
+<p>酷安里挺多人上的车, 是因为 eBay 海淘新用户会送 5 刀的减免, 而这个耳机是 5.01 刀.</p>
+<p>耳机外观不仔细看还可以, 仔细看会发现廉价感十足, 不过 0.01 刀的东西, 没必要追求这么多.</p>
+<p>耳机, 最关注的就是音质, 在我看来, 这款耳机音质还是可以的, 低音能咚咚咚, 算是能听,</p>
+<p>耳机的延迟也很小, 几乎感受不到.</p>
+<p><img src="https://ws3.sinaimg.cn/large/006tKfTcgy1fsb1ytrd09j31kw23s1l7.jpg" alt=""></p>
+<p><img src="https://ws3.sinaimg.cn/large/006tKfTcgy1fsb1yn9sqyj31kw23su16.jpg" alt=""></p>
+<p>但这款耳机连个品牌都没有… 说明书上就明摆写着蓝牙耳机, 好歹是个海淘的平台, 得走点心吧.</p>
+<p>总之, 除了包装以外, 这款耳机我还是挺满意的, 虽然音质不及我的小米圈铁 Pro, 但戴着方便一些. </p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结~"></a>总结~</h2><p>评测就这么结束了, 这是我第一次写开箱评测, 有什么没说出来的还请见谅, 这次的羊毛感觉很可以了, 这么一大堆东西下来花了我不到 0.2 元钱 <del>(但被 xx 快递员拉黑了)</del>, 以后可能会开箱点更有意思的东西, 感谢阅读.</p>
+<p>The end.</p>
 
 
                 <hr>
     <!-- donate code -->
 <script src="/js/jquery.min.js">
 </script><link rel="stylesheet" href="https://spencerwoo.com/css/donate.css">
-<script src="https://spencerwoo.com/js/donate.js"></script>
+<script src="/js/donate.js"></script>
 
 <div class="post_reward" >
-    <label class="reward_btn">请喝咖啡</label>
+    <label class="reward_btn">打赏一发吗?</label>
     <div class="qr_code">
         <div class="qr_code_img">
             <img class="image" src="https://ws3.sinaimg.cn/large/006tKfTcly1fsgsp2avwkj30pg0phwj7.jpg" title="WeChat">
@@ -272,13 +272,9 @@
 
                 <ul class="pager">
                     
-                        <li class="previous">
-                            <a href="/2018/06/14/open-case/" data-toggle="tooltip" data-placement="top" title="薅羊毛的收获~">&larr; Previous Post</a>
-                        </li>
-                    
                     
                         <li class="next">
-                            <a href="/2018/06/01/make-a-blog/" data-toggle="tooltip" data-placement="top" title="用 Hexo+NexT 搭建个人博客 (一)">Next Post &rarr;</a>
+                            <a href="/make-a-blog2/" data-toggle="tooltip" data-placement="top" title="用 Hexo+NexT 搭建个人博客 (二)">Next Post &rarr;</a>
                         </li>
                     
                 </ul>
@@ -337,8 +333,8 @@
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "ricky-4";
-    var disqus_identifier = "https://ricky29.tech/2018/06/09/make-a-blog2/";
-    var disqus_url = "https://ricky29.tech/2018/06/09/make-a-blog2/";
+    var disqus_identifier = "https://ricky29.tech/open-case/";
+    var disqus_url = "https://ricky29.tech/open-case/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

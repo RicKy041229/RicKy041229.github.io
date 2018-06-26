@@ -13,11 +13,11 @@
 
     <title>
         
-          用 Hexo+NexT 搭建个人博客 (一) - MAGiC | Never Give Up!
+          用 Hexo+NexT 搭建个人博客 (二) - MAGiC | Never Give Up!
         
     </title>
 
-    <link rel="canonical" href="https://ricky29.tech/2018/06/01/make-a-blog/">
+    <link rel="canonical" href="https://ricky29.tech/make-a-blog2/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -107,7 +107,7 @@
 
                         
                         <li>
-                            <a href="/diary/">ONLY 8 DAYS</a>
+                            <a href="/diary/">ONLY 7 DAYS</a>
                         </li>
                         
                     
@@ -172,7 +172,7 @@
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
-        background-image: url('bg.jpg')
+        background-image: url('blog2.jpg')
     }
 </style>
 <header class="intro-header" >
@@ -185,11 +185,11 @@
                           <a class="tag" href="/tags/#教程" title="教程">教程</a>
                         
                     </div>
-                    <h1>用 Hexo+NexT 搭建个人博客 (一)</h1>
-                    <h2 class="subheading">搭建博客的教程 Part1</h2>
+                    <h1>用 Hexo+NexT 搭建个人博客 (二)</h1>
+                    <h2 class="subheading">搭建博客的教程 Part2</h2>
                     <span class="meta">
                         Posted by RicKy on
-                        2018-06-01
+                        2018-06-09
                     </span>
                 </div>
             </div>
@@ -208,54 +208,50 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>有好多朋友问我我的博客是怎么建的, 我之前也答应过他们发一个教程, 但一直摸到现在, 今天闲来无事, 写一下在 Windows 端搭建博客的基本操作.<a id="more"></a></p>
-<h2 id="配置安装环境"><a href="#配置安装环境" class="headerlink" title="配置安装环境"></a>配置安装环境</h2><p>首先下载 <a href="https://git-scm.com/download/win">Git</a>, 打开安装程序, 一路下一步, 直到安装完成.</p>
-<p>之后, 下载 <a href="https://nodejs.org/zh-cn/">Node.js</a>, 同样也是一路下一步, 直到安装完成.</p>
-<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>两个都安装完成后, 按 <code>Win+R</code> 键打开”运行”, 输入 <code>cmd</code> 打开命令提示符. </p>
-<p>打开后, 输入 <code>npm install -g hexo-cli</code> , 等待安装完成即可配置好 Hexo.</p>
-<p>​这些步骤在 <a href="https://hexo.io">官方网站</a> 里都有详细的方法, 我这里如果理解不了的话可以去参考一下官方的教程.</p>
-<h2 id="创建-Hexo-文件夹"><a href="#创建-Hexo-文件夹" class="headerlink" title="创建 Hexo 文件夹"></a>创建 Hexo 文件夹</h2><p>在 cmd 中, 利用 <code>cd</code> 指令来选择自己想要创建 Hexo 文件夹的目录, 之后输入<code>hexo init &lt;folder&gt;</code> 来创建 Hexo 文件夹, 例如:</p>
-<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">d:</span>	<span class="comment">//定位到 D 盘</span></span><br><span class="line">hexo init myblog	<span class="comment">//创建 Hexo 文件夹</span></span><br></pre></td></tr></table></figure>
-<p>这样,在 D 盘就会生成一个名为 <code>myblog</code> 的文件夹.</p>
-<p>*之后的教程会以 D 盘的这个文件夹为例, 在别处建的话就要定位到目标目录下, 其余的步骤一样.</p>
-<h2 id="编辑-config-yml"><a href="#编辑-config-yml" class="headerlink" title="编辑 _config.yml"></a>编辑 _config.yml</h2><p>其实现在的 Blog 已经可以访问了, 在 cmd 中定位到 Hexo 文件夹 ( <code>d:</code>  <code>cd myblog</code> ) , 输入 <code>hexo s</code> 即可在本地生成网页, 在浏览器地址栏中输入 <a href="http://localhost:4000/">http://localhost:4000/</a> 即可访问, 若要停止, 在命令窗口中按 Ctrl+C 即可.</p>
-<p>……有点跑偏了, 我们继续, 打开 myblog 文件夹下的 <code>_config.yml</code> (这里推荐使用Notepad++) , 会发现里面的# site 一栏有以下几项: </p>
-<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># Site</span></span><br><span class="line"><span class="symbol">title:</span>	<span class="comment">//网站标题</span></span><br><span class="line"><span class="symbol">subtitle:</span>	<span class="comment">//网站副标题</span></span><br><span class="line"><span class="symbol">description:</span>	<span class="comment">//网站描述</span></span><br><span class="line"><span class="symbol">keywords:</span> </span><br><span class="line"><span class="symbol">author:</span>    <span class="comment">//博主的名字</span></span><br><span class="line"><span class="symbol">language:</span>	<span class="comment">//网站语言</span></span><br><span class="line"><span class="symbol">timezone:</span>	<span class="comment">//网站时区</span></span><br></pre></td></tr></table></figure>
-<p>现在要做的就是填好这几项, 一般我的 keywords 和 timezone 留空不填, language填 <code>zh-Hans</code> , <strong>注意, 所有的冒号后面要加空格, 是 <code>title: test</code> 而不是 <code>title:test</code></strong> , 编辑好后, 按 Ctrl+C 保存.</p>
-<h2 id="注册-GitHub-账号-amp-创建-GitHub-仓库"><a href="#注册-GitHub-账号-amp-创建-GitHub-仓库" class="headerlink" title="注册 GitHub 账号 &amp; 创建 GitHub 仓库"></a>注册 GitHub 账号 &amp; 创建 GitHub 仓库</h2><h3 id="注册-GitHub-账号"><a href="#注册-GitHub-账号" class="headerlink" title="注册 GitHub 账号"></a>注册 GitHub 账号</h3><p>首先, 打开 <a href="https://github.com">GitHub</a> , 输入 Username (用户名) 和 Email (邮箱地址) , 最后在 “Password” 一栏输入你的密码, 最后点击 “Sign up for Github”, 即可完成注册. 一路下一步, 会提示你验证邮箱, 验证即可.</p>
-<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1frwz7j1to8j30xd0h0761.jpg" alt="创建 GitHub 账号"></p>
-<h3 id="创建-GitHub-仓库"><a href="#创建-GitHub-仓库" class="headerlink" title="创建 GitHub 仓库"></a>创建 GitHub 仓库</h3><p>在新的页面点击 <code>Start a Project</code>, 会转到新建仓库的页面, <code>Repository name</code> 那一栏填 <code>yourid.github.io</code> , 例如 <code>ricky2004.github.io</code> , 填好后勾选 <code>Initialize this repository with a README</code>, 点击 <code>Create repository</code> 即可创建好仓库.</p>
-<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1frwz884byoj30ob0hjq3y.jpg" alt="创建 GitHub 仓库"></p>
-<h2 id="检查-GitHub-Pages-是否配置正确"><a href="#检查-GitHub-Pages-是否配置正确" class="headerlink" title="*检查 GitHub Pages 是否配置正确"></a>*检查 GitHub Pages 是否配置正确</h2><p>创建好仓库后,转到 Settings, 往下拉, 找到 GitHub Pages 一项, 应该会显示 <code>Your site is ready to be published at  https://yourid.github.io/</code> , 这时等待几分钟, 会显示 <code>Your site is published at &lt;https://yourid.github.io/&gt;</code> , 这样, 你的 GitHub Pages 就已经可以访问了.</p>
-<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1frwza7ylf7j30vl08djrw.jpg" alt="转到 Settings"></p>
-<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1frwz9kw5mpj30m80j3q3y.jpg" alt=""></p>
-<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1frwz9w7iavj30n20itdgu.jpg" alt=""></p>
-<h2 id="配置-Deployment"><a href="#配置-Deployment" class="headerlink" title="配置 Deployment"></a>配置 Deployment</h2><p>首先在 cmd 中定位到 Hexo 文件夹下, 输入 <code>npm install hexo-deployer-git --save</code> 来安装 hexo-deployer-git.</p>
-<p>等待安装完成后, 打开 Hexo 文件夹中的 <code>_config.yml</code> , 在文档末尾找到 # Deployment 一栏,如下:</p>
-<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># Deployment</span></span><br><span class="line"><span class="meta">## Docs: https:<span class="comment">//hexo.io/docs/deployment.html</span></span></span><br><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  type:</span></span><br></pre></td></tr></table></figure>
-<p>在 <code>type:</code> 后面输入 <code>git</code> , 回车, 在下面一行输入 <code>repo:</code> , <code>repo:</code>  后面填你的 GitHub 仓库地址, 再回车, 输入 <code>branch:</code> , 后面填 <code>master</code> , 例如:</p>
-<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># Deployment</span></span><br><span class="line"><span class="meta">## Docs: https:<span class="comment">//hexo.io/docs/deployment.html</span></span></span><br><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  type:</span> git</span><br><span class="line"><span class="symbol">  repo:</span> https:<span class="comment">//github.com/ricky2004/ricky2004.github.io</span></span><br><span class="line"><span class="symbol">  branch:</span> master</span><br></pre></td></tr></table></figure>
-<p>这些都填好后, 保存, 在 cmd 中输入:</p>
-<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean	<span class="comment">//清理 public 文件夹</span></span><br><span class="line">hexo g	<span class="comment">//创建静态页面</span></span><br><span class="line">hexo d	<span class="comment">//部署</span></span><br></pre></td></tr></table></figure>
-<p>或者可以一步到位:</p>
-<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean <span class="meta">&amp;&amp; hexo g &amp;&amp; hexo d</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1frwzbtof9dj30rl0ef3z5.jpg" alt=""></p>
-<p>第一次部署会弹出窗口要求你输入 GitHub 账号和密码, 输入即可.</p>
-<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1frwzbc1z2ij30bo0bo0sv.jpg" alt=""></p>
-<p>等待部署完毕.</p>
-<h2 id="Enjoy"><a href="#Enjoy" class="headerlink" title="Enjoy!"></a>Enjoy!</h2><p>这时,访问 <code>yourid.github.io</code> , 就会发现你的 Blog 已经成功创建好了.</p>
-<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1frwzcgy9dwj31hc0u0gw5.jpg" alt=""></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本方法就是把在本地生成好的博客文件夹上传到 GitHub 托管, 因为 GitHub 有提供 GitHub Pages (简称 GH-Pages), 而 GH-Pages 里的内容就是你仓库里的文件, 所以, 上传文件后, 你的 GItHub 仓库地址 (或 GH-Pages 域名) 就是你的博客域名. 第二部分会写如何绑定自己的域名, 以及如何写博文. <del>(又要摸了)</del></p>
+                <h2 id="I’m-Back"><a href="#I’m-Back" class="headerlink" title="I’m Back."></a>I’m Back.</h2><p>弃坑一周, 我又回来写教程了.</p>
+<h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><p>这一篇写的是把自己的域名绑定到 Blog, 就是在访问自己的域名时解析到 <code>yourid.github.io</code> (CNAME). 其次, 就是如何在自己的 Blog 写下第一篇文章.</p>
+<h2 id="绑定自定义域名"><a href="#绑定自定义域名" class="headerlink" title="绑定自定义域名"></a>绑定自定义域名</h2><h3 id="创建-CNAME-文件"><a href="#创建-CNAME-文件" class="headerlink" title="创建 CNAME 文件"></a>创建 CNAME 文件</h3><p>在你的 Blog 文件夹的 source 文件夹下, 新建一个名为 CNAME 的文件, 不要有后缀. (建个 .txt 的文本文档去掉后缀就好了)</p>
+<p>新建好后, 右键 <code>Edit with Notepad++</code> 打开, 在第一行输入你的域名, <code>Ctrl+S</code> 保存.<img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs59xzpopzj30uk0ml0tb.jpg" alt=""></p>
+<p>这样, 这个步骤就完成了一半了.</p>
+<h3 id="GitHub-仓库设置"><a href="#GitHub-仓库设置" class="headerlink" title="GitHub 仓库设置"></a>GitHub 仓库设置</h3><p>打开 GitHub 仓库, 转到设置, 在 <code>GitHub Pages</code> 一栏找到 <code>Custom domain</code> , 把自己的域名填到框里, SAVE 保存即可.</p>
+<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5a1t9rv6j30ns0j2my6.jpg" alt=""></p>
+<h3 id="配置域名解析"><a href="#配置域名解析" class="headerlink" title="配置域名解析"></a>配置域名解析</h3><p>这里我推荐使用 <a href="https://www.cloudflare.com/">Cloudflare</a>, 因为它可以提供 HTTPS 和免费的 SSL 证书, 打开网站, 注册登录不用我详细介绍了, 能有一点英语基础的人都可以做到.</p>
+<p>登录后会转到个人的主页, 点击 <code>+ Add a Site</code> 来添加一个域名, 输入域名后点确认, 一路下一步, <code>Select a Plan</code> 那里选 FREE, 然后点确认, 弹出的框中点 Purchase.</p>
+<p>之后会转到下面这样一个页面: </p>
+<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5b9p6biuj30w80p5go1.jpg" alt=""></p>
+<p>把这些都删掉, 在 Name 那一栏填你的域名; IPv4 address 如何获取, 我来说一下: </p>
+<h4 id="获取-IPv4-address"><a href="#获取-IPv4-address" class="headerlink" title="获取 IPv4 address"></a>获取 IPv4 address</h4><p>打开 cmd, 输入 <code>ping yourid.github.io</code> , 所得出的 IP 地址 即是你的 IPv4 address. 如图: </p>
+<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5bdqq4g2j30hn03ra9z.jpg" alt=""></p>
+<h4 id="继续"><a href="#继续" class="headerlink" title="继续"></a>继续</h4><p>把 IPv4 address 填好后, 点击 Add Record.即可添加一条解析.</p>
+<p>同样的方法, Name 那一栏填 www, IPv4 address 还是那个, 再建立一条.</p>
+<p>最后点击 Continue 即可.</p>
+<p>进入 Overview, 域名那一栏的黑体字就是你的解析 DNS, 把它们填到域名服务商那里, 之后等待解析生效.</p>
+<h4 id="配置-Page-Rules"><a href="#配置-Page-Rules" class="headerlink" title="配置 Page Rules"></a>配置 Page Rules</h4><p>在顶栏找到 Page Rules.</p>
+<p><img src="https://ws4.sinaimg.cn/large/006tKfTcgy1fs5zljcrlkj30t303ymxi.jpg" alt=""></p>
+<p>点击 Create Page Rule, 创建两条, 配置按下图填写:</p>
+<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5bmszhcbj30o90f8t9r.jpg" alt=""></p>
+<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5bn7m333j30oa0eiab2.jpg" alt=""></p>
+<p>注意: 域名要填自己的! </p>
+<h3 id="大功告成"><a href="#大功告成" class="headerlink" title="大功告成!"></a>大功告成!</h3><p>现在, 你只需要等待解析生效, 你就可以通过你自己的域名访问博客了.</p>
+<h2 id="年轻人的第一篇博文"><a href="#年轻人的第一篇博文" class="headerlink" title="年轻人的第一篇博文"></a>年轻人的第一篇博文</h2><h3 id="新建-Markdown-文档"><a href="#新建-Markdown-文档" class="headerlink" title="新建 Markdown 文档"></a>新建 Markdown 文档</h3><p>在你的 Hexo 文件夹中输入 <code>hexo new title</code> 即可创建一个文档, <code>title</code> 即是文档名.</p>
+<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5bsftpn4j30dy026gle.jpg" alt=""></p>
+<h3 id="打开文档并写作"><a href="#打开文档并写作" class="headerlink" title="打开文档并写作"></a>打开文档并写作</h3><p>文档生成在 <code>blog/source/</code> 下.</p>
+<p>这里打开 .md 文档我推荐使用 <a href="https://typora.io/">Typora</a>, 打开后, 会看到如下内容: </p>
+<p><img src="https://ws3.sinaimg.cn/large/006K8hJGgy1fs5bv9r6csj30m80gowel.jpg" alt=""></p>
+<figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: test	    //文章标题</span><br><span class="line">date:               //创建时间</span><br><span class="line"><span class="keyword">tags:</span>               //标签</span><br></pre></td></tr></table></figure>
+<p>没有特殊需要的话只改标题就可以, 写作并保存后, 使用 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code> 命令即可部署到 GitHub, 耐心等待几分钟后, 文章便呈现在了博客上.</p>
+<h2 id="The-End"><a href="#The-End" class="headerlink" title="The End."></a>The End.</h2><p><del>又要摸了.</del></p>
+<p>和之前一样, 如果有纰漏, 欢迎联系我修改, 第三部分准备写 <code>配置 NexT 主题</code> 以及 <code>评论系统的添加</code> .</p>
 
 
                 <hr>
     <!-- donate code -->
 <script src="/js/jquery.min.js">
 </script><link rel="stylesheet" href="https://spencerwoo.com/css/donate.css">
-<script src="https://spencerwoo.com/js/donate.js"></script>
+<script src="/js/donate.js"></script>
 
 <div class="post_reward" >
-    <label class="reward_btn">请喝咖啡</label>
+    <label class="reward_btn">打赏一发吗?</label>
     <div class="qr_code">
         <div class="qr_code_img">
             <img class="image" src="https://ws3.sinaimg.cn/large/006tKfTcly1fsgsp2avwkj30pg0phwj7.jpg" title="WeChat">
@@ -277,9 +273,13 @@
                 <ul class="pager">
                     
                         <li class="previous">
-                            <a href="/2018/06/09/make-a-blog2/" data-toggle="tooltip" data-placement="top" title="用 Hexo+NexT 搭建个人博客 (二)">&larr; Previous Post</a>
+                            <a href="/open-case/" data-toggle="tooltip" data-placement="top" title="薅羊毛的收获~">&larr; Previous Post</a>
                         </li>
                     
+                    
+                        <li class="next">
+                            <a href="/make-a-blog/" data-toggle="tooltip" data-placement="top" title="用 Hexo+NexT 搭建个人博客 (一)">Next Post &rarr;</a>
+                        </li>
                     
                 </ul>
 
@@ -337,8 +337,8 @@
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "ricky-4";
-    var disqus_identifier = "https://ricky29.tech/2018/06/01/make-a-blog/";
-    var disqus_url = "https://ricky29.tech/2018/06/01/make-a-blog/";
+    var disqus_identifier = "https://ricky29.tech/make-a-blog2/";
+    var disqus_url = "https://ricky29.tech/make-a-blog2/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
