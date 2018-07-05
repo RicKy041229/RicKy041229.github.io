@@ -93,13 +93,6 @@
 
                         
                         <li>
-                            <a href="/about/">ABOUT</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
                             <a href="/archives/">Archives</a>
                         </li>
                         
@@ -108,6 +101,13 @@
                         
                         <li>
                             <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">ABOUT</a>
                         </li>
                         
                     
@@ -201,19 +201,19 @@
 </ol>
 <h2 id="2-TAKE-IT-BOY"><a href="#2-TAKE-IT-BOY" class="headerlink" title="2.TAKE IT BOY~"></a>2.TAKE IT BOY~</h2><h3 id="2-1-替换图标"><a href="#2-1-替换图标" class="headerlink" title="2.1 替换图标"></a>2.1 替换图标</h3><p>首先, 要想好你要放多少图标, 我的一排能放 25 个图标, 我用的方法是把一整行塞满, 然后两边依次去掉一个, 一直剩下中间需要的图标数.</p>
 <p>之后, 就是要换图标了, 图标格式是 <code>.ico</code> , 如果你是 <code>.png</code> 或其他格式的话, 去网上下载个批量的转换器即可.</p>
-<p>我用的图标是来自 <code>酷安 @森语Plus</code> 的 <a href="https://www.coolapk.com/apk/me.morirain.dev.iconpack.pure">Pure 轻雨 </a>图标包.</p>
+<p>我用的图标是来自 <code>酷安 @森雨Plus</code> 的 <a href="https://www.coolapk.com/apk/me.morirain.dev.iconpack.pure">Pure 轻雨 </a>图标包.</p>
 <p>替换图标的过程我就不细说了, <strong>注意, 图标文件夹一定不要放在桌面, 如果删掉图标全都变成空白了!</strong></p>
 <h3 id="2-2-去除应用名以及快捷方式的箭头"><a href="#2-2-去除应用名以及快捷方式的箭头" class="headerlink" title="2.2 去除应用名以及快捷方式的箭头"></a>2.2 去除应用名以及快捷方式的箭头</h3><p>换好图标, 定睛一看, 看着就是不舒服, 就是箭头和应用名在作怪 (看个人喜好).</p>
 <h4 id="2-2-1-去除应用名"><a href="#2-2-1-去除应用名" class="headerlink" title="2.2.1 去除应用名"></a>2.2.1 去除应用名</h4><p>这个很简单,  在小娜里面搜 <code>字符映射表</code>, 找到里面的空格, 复制出来粘贴到应用名那里就好.</p>
 <p><img src="https://ws4.sinaimg.cn/large/006K8hJGly1fsy55tntvcj30ft0eqaak.jpg" alt="image"></p>
-<h4 id="2-2-2-去除快捷方式的箭头"><a href="#2-2-2-去除快捷方式的箭头" class="headerlink" title="2.2.2 去除快捷方式的箭头"></a>2.2.2 去除快捷方式的箭头</h4><p>这个需要批处理, 新建 <code>.txt</code> 文档, 把下面代码复制进去, 保存, 以管理员身份运行就 OK 了.</p>
+<h4 id="2-2-2-去除快捷方式的箭头"><a href="#2-2-2-去除快捷方式的箭头" class="headerlink" title="2.2.2 去除快捷方式的箭头"></a>2.2.2 去除快捷方式的箭头</h4><p>这个需要批处理, 新建 <code>.txt</code> 文档, 把下面代码复制进去, 保存, 后缀改为 <code>.bat</code> , 以管理员身份运行就 OK 了.</p>
 <p>代码如下:</p>
 <figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">reg add "HKEY_LOCAL_MACHINE<span class="symbol">\S</span>OFTWARE<span class="symbol">\M</span>icrosoft<span class="symbol">\W</span>indows<span class="symbol">\C</span>urrentVersion<span class="symbol">\E</span>xplorer<span class="symbol">\S</span>hell Icons" /v 29 /d "<span class="variable">%systemroot%</span><span class="symbol">\s</span>ystem32<span class="symbol">\i</span>mageres.dll,197" /t reg_sz /f</span><br><span class="line">taskkill /f /im explorer.exe</span><br><span class="line">attrib -s -r -h "<span class="variable">%userprofile%</span><span class="symbol">\A</span>ppData<span class="symbol">\L</span>ocal<span class="symbol">\i</span>concache.db"</span><br><span class="line">del "<span class="variable">%userprofile%</span><span class="symbol">\A</span>ppData<span class="symbol">\L</span>ocal<span class="symbol">\i</span>concache.db" /f /q</span><br><span class="line">start explorer</span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
 <p>以及后悔药 (恢复小箭头) :</p>
 <figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">reg delete "HKEY_LOCAL_MACHINE<span class="symbol">\S</span>OFTWARE<span class="symbol">\M</span>icrosoft<span class="symbol">\W</span>indows<span class="symbol">\C</span>urrentVersion<span class="symbol">\E</span>xplorer<span class="symbol">\S</span>hell Icons" /v 29 /f</span><br><span class="line">taskkill /f /im explorer.exe</span><br><span class="line">attrib -s -r -h "<span class="variable">%userprofile%</span><span class="symbol">\A</span>ppData<span class="symbol">\L</span>ocal<span class="symbol">\i</span>concache.db"</span><br><span class="line">del "<span class="variable">%userprofile%</span><span class="symbol">\A</span>ppData<span class="symbol">\L</span>ocal<span class="symbol">\i</span>concache.db" /f /q</span><br><span class="line">start explorer</span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
 <p>这样, 小箭头就被去除了, 桌面只剩图标了.</p>
 <h3 id="2-3-桌面时钟"><a href="#2-3-桌面时钟" class="headerlink" title="2.3 桌面时钟"></a>2.3 桌面时钟</h3><p>这里我用的是 <a href="https://store.steampowered.com/app/431960/Wallpaper_Engine/">Wallpaper Engine</a>, Steam 售价 18 元, 不算贵.</p>
-<p>关于壁纸, 我用的是 Perfect Wallpaper, 创意工坊可以搜到, 很多功能可以自定义.</p>
+<p>关于壁纸, 我用的是 <code>Perfect Wallpaper</code> , 创意工坊可以搜到, 很多功能可以自定义.</p>
 <p>用 Wallpaper Engine 的朋友可以按以下的步骤来, 也可以按自己喜好来配置.</p>
 <h4 id="2-3-1-设置壁纸"><a href="#2-3-1-设置壁纸" class="headerlink" title="2.3.1 设置壁纸"></a>2.3.1 设置壁纸</h4><p>这个是可以自定义壁纸的, 当然它也自带了一些高质量的壁纸. 按需选择.</p>
 <p><img src="https://wx1.sinaimg.cn/large/006K8hJGly1fsy5os9wrsj308408y74g.jpg" alt="image"></p>
