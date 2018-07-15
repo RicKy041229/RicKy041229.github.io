@@ -13,11 +13,11 @@
 
     <title>
         
-          如何美化 Windows10 桌面 - MAGiC
+          我眼中的, 小众的, 网络世界 - MAGiC
         
     </title>
 
-    <link rel="canonical" href="https://ricky29.tech/windows-desktop/">
+    <link rel="canonical" href="https://ricky29.tech/rua/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -153,7 +153,7 @@
     <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
-        background-image: url('https://wx1.sinaimg.cn/large/006K8hJGly1fsy4ria7auj33jk2ns1kx.jpg')
+        background-image: url('https://ws3.sinaimg.cn/large/006tKfTcgy1ftazubik2wj31kw0w04qr.jpg')
     }
 </style>
 <header class="intro-header" >
@@ -163,15 +163,17 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                          <a class="tag" href="/tags/#教程" title="教程">教程</a>
-                        
                           <a class="tag" href="/tags/#日常" title="日常">日常</a>
                         
+                          <a class="tag" href="/tags/#云体验" title="云体验">云体验</a>
+                        
+                          <a class="tag" href="/tags/#瞎说" title="瞎说">瞎说</a>
+                        
                     </div>
-                    <h1>如何美化 Windows10 桌面</h1>
-                    <h2 class="subheading">简洁 | 耐看</h2>
+                    <h1>我眼中的, 小众的, 网络世界</h1>
+                    <h2 class="subheading"></h2>
                     <span class="fa fa-calendar">
-                           2018 年 7 月 4 日
+                           2018 年 7 月 15 日
                     </span>
                 </div>
             </div>
@@ -190,46 +192,29 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <div align="center"><iframe  frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=3929381&auto=0&height=66"></iframe></div>
-
-<p>闲来无事, 看到 Windows 的桌面已经几个月没换壁纸了, 于是想把图标重新排列一下, 换一下图标.</p>
-<h2 id="成品"><a href="#成品" class="headerlink" title="成品"></a>成品</h2><p><img src="https://wx2.sinaimg.cn/large/006K8hJGly1fsy4qkhi8uj31hc0t6kjl.jpg" alt="image"></p>
-<h2 id="1-准备"><a href="#1-准备" class="headerlink" title="1.准备"></a>1.准备</h2><ol>
-<li>你喜欢的图标包</li>
-<li>Wallpaper Engine (也可以用其它桌面软件代替, 主要是为了桌面的时钟)</li>
-<li>把本文看完 (误</li>
-</ol>
-<h2 id="2-TAKE-IT-BOY"><a href="#2-TAKE-IT-BOY" class="headerlink" title="2.TAKE IT BOY~"></a>2.TAKE IT BOY~</h2><h3 id="2-1-替换图标"><a href="#2-1-替换图标" class="headerlink" title="2.1 替换图标"></a>2.1 替换图标</h3><p>首先, 要想好你要放多少图标, 我的一排能放 25 个图标, 我用的方法是把一整行塞满, 然后两边依次去掉一个, 一直剩下中间需要的图标数.</p>
-<p>之后, 就是要换图标了, 图标格式是 <code>.ico</code> , 如果你是 <code>.png</code> 或其他格式的话, 去网上下载个批量的转换器即可.</p>
-<p>我用的图标是来自 <code>酷安 @森雨Plus</code> 的 <a href="https://www.coolapk.com/apk/me.morirain.dev.iconpack.pure">Pure 轻雨 </a>图标包.</p>
-<p>替换图标的过程我就不细说了, <strong>注意, 图标文件夹一定不要放在桌面, 如果删掉图标全都变成空白了!</strong></p>
-<h3 id="2-2-去除应用名以及快捷方式的箭头"><a href="#2-2-去除应用名以及快捷方式的箭头" class="headerlink" title="2.2 去除应用名以及快捷方式的箭头"></a>2.2 去除应用名以及快捷方式的箭头</h3><p>换好图标, 定睛一看, 看着就是不舒服, 就是箭头和应用名在作怪 (看个人喜好).</p>
-<h4 id="2-2-1-去除应用名"><a href="#2-2-1-去除应用名" class="headerlink" title="2.2.1 去除应用名"></a>2.2.1 去除应用名</h4><p>这个很简单,  在小娜里面搜 <code>字符映射表</code>, 找到里面的空格, 复制出来粘贴到应用名那里就好.</p>
-<p><img src="https://ws4.sinaimg.cn/large/006K8hJGly1fsy55tntvcj30ft0eqaak.jpg" alt="image"></p>
-<h4 id="2-2-2-去除快捷方式的箭头"><a href="#2-2-2-去除快捷方式的箭头" class="headerlink" title="2.2.2 去除快捷方式的箭头"></a>2.2.2 去除快捷方式的箭头</h4><p>这个需要批处理, 新建 <code>.txt</code> 文档, 把下面代码复制进去, 保存, 后缀改为 <code>.bat</code> , 以管理员身份运行就 OK 了.</p>
-<p>代码如下:</p>
-<figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">reg add "HKEY_LOCAL_MACHINE<span class="symbol">\S</span>OFTWARE<span class="symbol">\M</span>icrosoft<span class="symbol">\W</span>indows<span class="symbol">\C</span>urrentVersion<span class="symbol">\E</span>xplorer<span class="symbol">\S</span>hell Icons" /v 29 /d "<span class="variable">%systemroot%</span><span class="symbol">\s</span>ystem32<span class="symbol">\i</span>mageres.dll,197" /t reg_sz /f</span><br><span class="line">taskkill /f /im explorer.exe</span><br><span class="line">attrib -s -r -h "<span class="variable">%userprofile%</span><span class="symbol">\A</span>ppData<span class="symbol">\L</span>ocal<span class="symbol">\i</span>concache.db"</span><br><span class="line">del "<span class="variable">%userprofile%</span><span class="symbol">\A</span>ppData<span class="symbol">\L</span>ocal<span class="symbol">\i</span>concache.db" /f /q</span><br><span class="line">start explorer</span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
-<p>以及后悔药 (恢复小箭头) :</p>
-<figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">reg delete "HKEY_LOCAL_MACHINE<span class="symbol">\S</span>OFTWARE<span class="symbol">\M</span>icrosoft<span class="symbol">\W</span>indows<span class="symbol">\C</span>urrentVersion<span class="symbol">\E</span>xplorer<span class="symbol">\S</span>hell Icons" /v 29 /f</span><br><span class="line">taskkill /f /im explorer.exe</span><br><span class="line">attrib -s -r -h "<span class="variable">%userprofile%</span><span class="symbol">\A</span>ppData<span class="symbol">\L</span>ocal<span class="symbol">\i</span>concache.db"</span><br><span class="line">del "<span class="variable">%userprofile%</span><span class="symbol">\A</span>ppData<span class="symbol">\L</span>ocal<span class="symbol">\i</span>concache.db" /f /q</span><br><span class="line">start explorer</span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
-<p>这样, 小箭头就被去除了, 桌面只剩图标了.</p>
-<h3 id="2-3-桌面时钟"><a href="#2-3-桌面时钟" class="headerlink" title="2.3 桌面时钟"></a>2.3 桌面时钟</h3><p>这里我用的是 <a href="https://store.steampowered.com/app/431960/Wallpaper_Engine/">Wallpaper Engine</a>, Steam 售价 18 元, 不算贵.</p>
-<p>关于壁纸, 我用的是 <code>Perfect Wallpaper</code> , 创意工坊可以搜到, 很多功能可以自定义.</p>
-<p>用 Wallpaper Engine 的朋友可以按以下的步骤来, 也可以按自己喜好来配置.</p>
-<h4 id="2-3-1-设置壁纸"><a href="#2-3-1-设置壁纸" class="headerlink" title="2.3.1 设置壁纸"></a>2.3.1 设置壁纸</h4><p>这个是可以自定义壁纸的, 当然它也自带了一些高质量的壁纸. 按需选择.</p>
-<p><img src="https://wx1.sinaimg.cn/large/006K8hJGly1fsy5os9wrsj308408y74g.jpg" alt="image"></p>
-<h4 id="2-3-2-关闭不必要的动画效果"><a href="#2-3-2-关闭不必要的动画效果" class="headerlink" title="2.3.2 关闭不必要的动画效果"></a>2.3.2 关闭不必要的动画效果</h4><p>这个壁纸我记得默认是有樱花特效的, 反正我是选了关闭.</p>
-<p>什么粒子特效啦, 音乐可视化啦, 开着玩几天就好, 时间长了容易审美疲劳.</p>
-<h4 id="2-3-3-调整时间和日期位置"><a href="#2-3-3-调整时间和日期位置" class="headerlink" title="2.3.3 调整时间和日期位置"></a>2.3.3 调整时间和日期位置</h4><p>这个也是按自己的喜好来, 我的配置是这样:</p>
-<figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">时间大小: 15</span></span><br><span class="line">24 小时制 √</span><br><span class="line">显示秒 √</span><br><span class="line"><span class="section">时间-X(%): 50</span></span><br><span class="line"><span class="section">时间-Y(%): 50</span></span><br></pre></td></tr></table></figure>
-<p>日期也和上面差不多.</p>
-<h2 id="3-壁纸最好耐看点"><a href="#3-壁纸最好耐看点" class="headerlink" title="3.壁纸最好耐看点"></a>3.壁纸最好耐看点</h2><p>比如我这个 (误</p>
-<p>我觉得壁纸越简单越好, 像我之前用的壁纸太花, 容易看不清图标. 所以我用 Windows 就是拿来打游戏的, 一般的写文章, 设计等还是要在 Mac OS X 上完成.</p>
-<p>上面这句可能是废话, 当然你想要什么壁纸就设置什么壁纸, 大不了看腻了再换嘛.</p>
-<h2 id="4-大功告成"><a href="#4-大功告成" class="headerlink" title="4.大功告成!"></a>4.大功告成!</h2><p>现在, 把窗口关掉, 就可以看到你的极简而又不失美感的桌面了.</p>
-<p>这篇教程大多数都是按照自己的喜好来的, 所以本篇文章可能并没有什么用.</p>
-<p>但万一你一直懒得收拾桌面, 看到我这个教程突然想大干♂一场了呢 (滑稽</p>
-<p>感谢阅读.</p>
-<p>如果觉得本文不错, 欢迎点击文章下方的打赏按钮来侮辱我 (又蹭酷安开发者的热度</p>
+                <h2 id="酷安"><a href="#酷安" class="headerlink" title="酷安"></a>酷安</h2><p>当初知道这个平台是通过朋友介绍, 当时还是应用市场, 有着十分活跃的评论区, 不像其他应用商店一样都是水军, 基本个个都是玩机大神, 平均素质较高.</p>
+<p>里面也有许多优秀的个人开发者, 受到酷友们追捧.</p>
+<p>V6 (酷市场) 版本, 是我认为最好的版本, V5 版本我还没体验过, 听说和 V6 差不多.</p>
+<p>后来, 酷安升级到了 V7 版本, 引入了「头条」, 酷友们一些热门的动态会被选到头条中, 挂在首页, 其中也会出现一些零赞零回复的头条,  是算法问题, 酷友们戏称为「PY 交易」, 就是指某酷友和小编达成了交易, 小编手动把他的放在头条里, 由此看来, 到了 V7 版本, 酷友们的平均素质并没有多大的下滑, 毕竟用户群体是面向玩机的.</p>
+<p>到了 V7 中后期, 随着酷安引入大量用户, 在 QQ 看点等地方也会有人宣传酷安, 导致许多低质量的用户涌入酷安, 所以头条上时常会出现撕逼, 开发者和用户也会出现撕逼, 酷安的小编更因为某应用的开发者是妹子而庇护.</p>
+<p>如此美好的交流环境就像溜滑梯一样下降了不少, 官方也有了一点挽回的措施.</p>
+<p>我在 V6、V7 这两个 “时代” 中还算比较活跃的, 虽然不像 @Fince 之类的水王那样有几千条动态. 我的动态只有将近 200 条, 而到了 V8 版本, 就几乎没有过动态.</p>
+<p>V8, 酷安进一步引入用户, 头条上也出现了许多其他方面的内容, 官方还开放了许多话题, 涵盖生活各方面, 酷安转型为社区, 不再是单一的应用市场.</p>
+<p>酷安还开放了类似于「知乎」的问答, 难免其中会有酷友会从知乎里面搬问题到酷安, 所以一小部分酷友称酷安为「酷乎」.</p>
+<p>林子大了什么鸟都有, 就比如有些酷友会提一些比较有争论性的问题而引发撕逼. 还有些「杠精」专门反驳别人的观点, 还有给别人乱扣杠精帽子的…..</p>
+<p>总之, 在酷安转型为社区后, 官方人员没变, 但用户群体变了, 从以前一个应用市场到现在一部分人拿它当朋友圈, 即使它有这么多的缺点, 但我依然喜欢那里, 毕竟还是趋近于小众, 不像 B 站那样偏向大众化.</p>
+<h2 id="BiliBili"><a href="#BiliBili" class="headerlink" title="BiliBili"></a>BiliBili</h2><p>接触 B 站时, 是在 2014 年, 因为喜欢看鬼畜, 就入了坑.</p>
+<p>B 站有许多好处, 视频无广告, 界面符合 Material Design, 不臃肿, 直到现在它还是我获取信息的渠道之一.</p>
+<p>2015 - 2016 这两年我没那么多印象, 那时我还没有手机, 电脑又不方便, 所以就没怎么上过.</p>
+<p>到了 2017 年, 我因为喜欢看一些有趣的番剧和游戏解说而再次进入 B 站, 那时的 B 站也还好, 小众一点, 评论区和弹幕很和谐, 少数会出现撕逼的情况, 会有许多热心的用户举报, 官方也会及时处理.</p>
+<p>直到 2018 年, 随着 B 站的「UP 主鼓励计划」的出台, 大量营销号涌入 B 站, 又因为快手、抖音、微视等短视频平台的火爆, 许多无意义, 低质量的视频迅速占领了 B 站, 当然也会有高质量的视频出现, B 站浏览器首页依旧突出其「二次元」的风格, 而手机版首页信息流却时常推送一些营销号视频, 官方什么不封禁这些营销号? 据说这些营销号发布的大量视频, 会给 B 站带来流量, 产生经济效应.</p>
+<p>随着 B 站上市, 用户数量也迅速增加, 评论区也会出现一些撕逼, 毕竟林子大了什么鸟都有.</p>
+<p>另外, 随着「绝地求生」的火爆, 许多主播也直播起了此游戏, 有些人就会随便找几个大主播的直播, 录一段下来就投稿, 一天可以水几个甚至几十个视频, 再起一个「标题党」样式的标题, 观看量马上就上去了, 这和营销号又有什么区别呢? 现在投稿的门槛也太低了, 但能为官方带来经济效应, 官方肯定也不会管.</p>
+<p>总之, 相对于爱奇艺、优酷等平台, 我还是选择 B 站, 即使它的用户质量下降了不少, 我依然爱这个破站.</p>
+<h2 id="以上"><a href="#以上" class="headerlink" title="以上"></a>以上</h2><p>我对这两个平台又爱又恨, 仔细一想, 看到垃圾内容, 自己可以不用去插一嘴, 直接举报不就好了.</p>
+<p>一个平台越走向大众化, 它的内容就要迎合大众, 所以, 要接受这个现实, 毕竟世界不是围绕着自己转.</p>
+<p>井底之蛙的傻逼言论, 不喜勿看.</p>
+<p><strong>Thanks for reading.</strong></p>
 
 
                 <hr>
@@ -260,13 +245,9 @@
 
                 <ul class="pager">
                     
-                        <li class="previous">
-                            <a href="/rua/" data-toggle="tooltip" data-placement="top" title="我眼中的, 小众的, 网络世界">&larr; Previous Post</a>
-                        </li>
-                    
                     
                         <li class="next">
-                            <a href="/open-case/" data-toggle="tooltip" data-placement="top" title="薅羊毛的收获~">Next Post &rarr;</a>
+                            <a href="/windows-desktop/" data-toggle="tooltip" data-placement="top" title="如何美化 Windows10 桌面">Next Post &rarr;</a>
                         </li>
                     
                 </ul>
@@ -325,8 +306,8 @@
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "ricky-4";
-    var disqus_identifier = "https://ricky29.tech/windows-desktop/";
-    var disqus_url = "https://ricky29.tech/windows-desktop/";
+    var disqus_identifier = "https://ricky29.tech/rua/";
+    var disqus_url = "https://ricky29.tech/rua/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
