@@ -133,7 +133,12 @@
 
 
     <!-- Main Content -->
-    <!-- Post Header -->
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://ricky29.tech/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
 <style type="text/css">
     header.intro-header{
         background-image: url('https://tva1.sinaimg.cn/large/006y8mN6ly1g8d4zf8tz9j31j00u048s.jpg')
@@ -152,7 +157,7 @@
                     <h1>2019来啦！</h1>
                     <h2 class="subheading">新年快乐！</h2>
                     <span class="fa fa-calendar">
-                           2019 年 1 月 1 日
+                        2019 年 1 月 1 日
                     </span>
                 </div>
             </div>
@@ -191,8 +196,6 @@
 
 
                 <hr>
-
-</div>
 
                 
 
@@ -236,7 +239,7 @@
                 <ul class="list-inline">
 
                     
-                        <li><a href="https://www.bolitao.xyz/" target="_blank">kara</a></li>
+                        <li><a href="https://www.bolitao.xyz/" target="_blank">Kara</a></li>
                     
                         <li><a href="https://spencerwoo.com" target="_blank">Spencer Woo</a></li>
                     
@@ -290,9 +293,9 @@
 <script>
     async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
         anchors.options = {
-          visible: 'never',
+          visible: 'always',
           placement: 'right',
-          icon: 
+          icon: '#'
         };
         anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
     })
