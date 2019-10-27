@@ -76,14 +76,14 @@
 
                         
                         <li>
-                            <a href="/about/">ABOUT</a>
+                            <a href="/archives/">Archives</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/archives/">Archives</a>
+                            <a href="/about/">ABOUT</a>
                         </li>
                         
                     
@@ -192,13 +192,28 @@
 
                 
 
-                
-                <!-- disqus 评论框 start -->
-                <div class="comment">
-                    <div id="disqus_thread" class="disqus-thread"></div>
-                </div>
-                <!-- disqus 评论框 end -->
-                
+                    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+                    <!--<script src="//cdn.jsdelivr.net/npm/leancloud-storage@latest/dist/av-min.js"></script>
+                <script src='//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js'></script>-->
+                <div id="vcomments"></div>
+                <script>
+                    var notify = false == true ? true : false;
+                    var verify = false == true ? true : false;
+                    var visitor = true == true ? true : false;
+              new Valine({
+                  el: '#vcomments',
+                            notify: notify,
+                            verify: verify,
+                    app_id: 'z6QqAppdO0CSo7RtD0ejrrdb-gzGzoHsz',
+                  app_key: 'D9ineHbRmLoNcRFShX2zvv7l',
+                        lang: 'en',
+                        placeholder: 'ヾﾉ≧∀≦)o快来评论一下吧!',
+                        avatar: 'monsterid',
+                        pageSize: 10,
+                        visitor: visitor
+                    });
+                </script>
 
             </div>
     <!-- Side Catalog Container -->
