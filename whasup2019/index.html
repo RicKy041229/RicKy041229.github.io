@@ -13,11 +13,11 @@
 
     <title>
         
-          如何美化 Windows10 桌面 - MAGiC
+          2019来啦！ - MAGiC
         
     </title>
 
-    <link rel="canonical" href="https://ricky29.tech/windows-desktop/">
+    <link rel="canonical" href="https://ricky29.tech/whasup2019/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -36,10 +36,8 @@
     <!-- ga & ba script hoook -->
     <script></script>
 
-    <!-- donate JS -->
-    <script src="https://cdn.bootcss.com/jquery/3.3.1/core.js"></script>
-    <link rel="stylesheet" href="https://spencerwoo.com/css/donate.css">
-    <script src="https://spencerwoo.com/js/donate.js"></script>
+    <!-- Valine -->
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 </head>
 
 
@@ -138,7 +136,7 @@
     <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
-        background-image: url('https://wx1.sinaimg.cn/large/006K8hJGly1fsy4ria7auj33jk2ns1kx.jpg')
+        background-image: url('https://tva1.sinaimg.cn/large/006y8mN6ly1g8d4zf8tz9j31j00u048s.jpg')
     }
 </style>
 <header class="intro-header" >
@@ -148,15 +146,13 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                          <a class="tag" href="/tags/#教程" title="教程">教程</a>
-                        
                           <a class="tag" href="/tags/#日常" title="日常">日常</a>
                         
                     </div>
-                    <h1>如何美化 Windows10 桌面</h1>
-                    <h2 class="subheading">简洁 | 耐看</h2>
+                    <h1>2019来啦！</h1>
+                    <h2 class="subheading">新年快乐！</h2>
                     <span class="fa fa-calendar">
-                           2018 年 7 月 4 日
+                           2019 年 1 月 1 日
                     </span>
                 </div>
             </div>
@@ -175,69 +171,26 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <div align="center"><iframe  frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=3929381&auto=0&height=66"></iframe></div>
-
-<p>闲来无事, 看到 Windows 的桌面已经几个月没换壁纸了, 于是想把图标重新排列一下, 换一下图标.</p>
-<h2 id="成品"><a href="#成品" class="headerlink" title="成品"></a>成品</h2><p><img src="https://wx2.sinaimg.cn/large/006K8hJGly1fsy4qkhi8uj31hc0t6kjl.jpg" alt="image"></p>
-<h2 id="1-准备"><a href="#1-准备" class="headerlink" title="1.准备"></a>1.准备</h2><ol>
-<li>你喜欢的图标包</li>
-<li>Wallpaper Engine (也可以用其它桌面软件代替, 主要是为了桌面的时钟)</li>
-<li>把本文看完 (误</li>
-</ol>
-<h2 id="2-TAKE-IT-BOY"><a href="#2-TAKE-IT-BOY" class="headerlink" title="2.TAKE IT BOY~"></a>2.TAKE IT BOY~</h2><h3 id="2-1-替换图标"><a href="#2-1-替换图标" class="headerlink" title="2.1 替换图标"></a>2.1 替换图标</h3><p>首先, 要想好你要放多少图标, 我的一排能放 25 个图标, 我用的方法是把一整行塞满, 然后两边依次去掉一个, 一直剩下中间需要的图标数.</p>
-<p>之后, 就是要换图标了, 图标格式是 <code>.ico</code> , 如果你是 <code>.png</code> 或其他格式的话, 去网上下载个批量的转换器即可.</p>
-<p>我用的图标是来自 <code>酷安 @森雨Plus</code> 的 <a href="https://www.coolapk.com/apk/me.morirain.dev.iconpack.pure">Pure 轻雨 </a>图标包.</p>
-<p>替换图标的过程我就不细说了, <strong>注意, 图标文件夹一定不要放在桌面, 如果删掉图标全都变成空白了!</strong></p>
-<h3 id="2-2-去除应用名以及快捷方式的箭头"><a href="#2-2-去除应用名以及快捷方式的箭头" class="headerlink" title="2.2 去除应用名以及快捷方式的箭头"></a>2.2 去除应用名以及快捷方式的箭头</h3><p>换好图标, 定睛一看, 看着就是不舒服, 就是箭头和应用名在作怪 (看个人喜好).</p>
-<h4 id="2-2-1-去除应用名"><a href="#2-2-1-去除应用名" class="headerlink" title="2.2.1 去除应用名"></a>2.2.1 去除应用名</h4><p>这个很简单,  在小娜里面搜 <code>字符映射表</code>, 找到里面的空格, 复制出来粘贴到应用名那里就好.</p>
-<p><img src="https://ws4.sinaimg.cn/large/006K8hJGly1fsy55tntvcj30ft0eqaak.jpg" alt="image"></p>
-<h4 id="2-2-2-去除快捷方式的箭头"><a href="#2-2-2-去除快捷方式的箭头" class="headerlink" title="2.2.2 去除快捷方式的箭头"></a>2.2.2 去除快捷方式的箭头</h4><p>这个需要批处理, 新建 <code>.txt</code> 文档, 把下面代码复制进去, 保存, 后缀改为 <code>.bat</code> , 以管理员身份运行就 OK 了.</p>
-<p>代码如下:</p>
-<figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">reg add "HKEY_LOCAL_MACHINE<span class="symbol">\S</span>OFTWARE<span class="symbol">\M</span>icrosoft<span class="symbol">\W</span>indows<span class="symbol">\C</span>urrentVersion<span class="symbol">\E</span>xplorer<span class="symbol">\S</span>hell Icons" /v 29 /d "<span class="variable">%systemroot%</span><span class="symbol">\s</span>ystem32<span class="symbol">\i</span>mageres.dll,197" /t reg_sz /f</span><br><span class="line">taskkill /f /im explorer.exe</span><br><span class="line">attrib -s -r -h "<span class="variable">%userprofile%</span><span class="symbol">\A</span>ppData<span class="symbol">\L</span>ocal<span class="symbol">\i</span>concache.db"</span><br><span class="line">del "<span class="variable">%userprofile%</span><span class="symbol">\A</span>ppData<span class="symbol">\L</span>ocal<span class="symbol">\i</span>concache.db" /f /q</span><br><span class="line">start explorer</span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
-<p>以及后悔药 (恢复小箭头) :</p>
-<figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">reg delete "HKEY_LOCAL_MACHINE<span class="symbol">\S</span>OFTWARE<span class="symbol">\M</span>icrosoft<span class="symbol">\W</span>indows<span class="symbol">\C</span>urrentVersion<span class="symbol">\E</span>xplorer<span class="symbol">\S</span>hell Icons" /v 29 /f</span><br><span class="line">taskkill /f /im explorer.exe</span><br><span class="line">attrib -s -r -h "<span class="variable">%userprofile%</span><span class="symbol">\A</span>ppData<span class="symbol">\L</span>ocal<span class="symbol">\i</span>concache.db"</span><br><span class="line">del "<span class="variable">%userprofile%</span><span class="symbol">\A</span>ppData<span class="symbol">\L</span>ocal<span class="symbol">\i</span>concache.db" /f /q</span><br><span class="line">start explorer</span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
-<p>这样, 小箭头就被去除了, 桌面只剩图标了.</p>
-<h3 id="2-3-桌面时钟"><a href="#2-3-桌面时钟" class="headerlink" title="2.3 桌面时钟"></a>2.3 桌面时钟</h3><p>这里我用的是 <a href="https://store.steampowered.com/app/431960/Wallpaper_Engine/">Wallpaper Engine</a>, Steam 售价 18 元, 不算贵.</p>
-<p>关于壁纸, 我用的是 <code>Perfect Wallpaper</code> , 创意工坊可以搜到, 很多功能可以自定义.</p>
-<p>用 Wallpaper Engine 的朋友可以按以下的步骤来, 也可以按自己喜好来配置.</p>
-<h4 id="2-3-1-设置壁纸"><a href="#2-3-1-设置壁纸" class="headerlink" title="2.3.1 设置壁纸"></a>2.3.1 设置壁纸</h4><p>这个是可以自定义壁纸的, 当然它也自带了一些高质量的壁纸. 按需选择.</p>
-<p><img src="https://wx1.sinaimg.cn/large/006K8hJGly1fsy5os9wrsj308408y74g.jpg" alt="image"></p>
-<h4 id="2-3-2-关闭不必要的动画效果"><a href="#2-3-2-关闭不必要的动画效果" class="headerlink" title="2.3.2 关闭不必要的动画效果"></a>2.3.2 关闭不必要的动画效果</h4><p>这个壁纸我记得默认是有樱花特效的, 反正我是选了关闭.</p>
-<p>什么粒子特效啦, 音乐可视化啦, 开着玩几天就好, 时间长了容易审美疲劳.</p>
-<h4 id="2-3-3-调整时间和日期位置"><a href="#2-3-3-调整时间和日期位置" class="headerlink" title="2.3.3 调整时间和日期位置"></a>2.3.3 调整时间和日期位置</h4><p>这个也是按自己的喜好来, 我的配置是这样:</p>
-<figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">时间大小: 15</span></span><br><span class="line">24 小时制 √</span><br><span class="line">显示秒 √</span><br><span class="line"><span class="section">时间-X(%): 50</span></span><br><span class="line"><span class="section">时间-Y(%): 50</span></span><br></pre></td></tr></table></figure>
-<p>日期也和上面差不多.</p>
-<h2 id="3-壁纸最好耐看点"><a href="#3-壁纸最好耐看点" class="headerlink" title="3.壁纸最好耐看点"></a>3.壁纸最好耐看点</h2><p>比如我这个 (误</p>
-<p>我觉得壁纸越简单越好, 像我之前用的壁纸太花, 容易看不清图标. 所以我用 Windows 就是拿来打游戏的, 一般的写文章, 设计等还是要在 Mac OS X 上完成.</p>
-<p>上面这句可能是废话, 当然你想要什么壁纸就设置什么壁纸, 大不了看腻了再换嘛.</p>
-<h2 id="4-大功告成"><a href="#4-大功告成" class="headerlink" title="4.大功告成!"></a>4.大功告成!</h2><p>现在, 把窗口关掉, 就可以看到你的极简而又不失美感的桌面了.</p>
-<p>这篇教程大多数都是按照自己的喜好来的, 所以本篇文章可能并没有什么用.</p>
-<p>但万一你一直懒得收拾桌面, 看到我这个教程突然想大干♂一场了呢 (滑稽</p>
-<p>感谢阅读.</p>
-<p>如果觉得本文不错, 欢迎点击文章下方的打赏按钮来侮辱我 (又蹭酷安开发者的热度</p>
+                <p>2018 下半年因为升入初三而不得不因为学业暂时放弃这个博客. (其实就是懒</p>
+<p>期中考试后没有这么紧张才重操旧业, 但又因为 Windows 下的 hexo 有些问题所以劝退了. 只是简单的在 GitHub 仓库里删了一些以前沙雕文章的入口, 就不了了之.</p>
+<p>关于 2018 这年, 没什么好说的, 只是下半年突然「醒悟」发现自己上半年干的事都那么傻屌. 在此给那些因为我太话唠做作而离开我的朋友说句对不起.</p>
+<p>上半年的事暂且不谈, 来说说下半年.</p>
+<p>首先, 暑假养了只猫, 很可爱, 还有自带肥胖基因的色号, 一个月能吃掉我不少钱.</p>
+<p><a href="https://ws2.sinaimg.cn/large/006tNc79ly1fyxbg4u4ssj31400u0hdt.jpg"><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fyxbg4u4ssj31400u0hdt.jpg" alt="img"></a></p>
+<p>有了它生活快乐了不少. 电脑游戏我也很少碰了, PUBG 之类的竞技游戏已经不感兴趣, 单机游戏太无聊, 在 10 月中旬换了 iPhone, 戒掉了酷安, 下载了知乎等一些「能涨姿势」的 App.</p>
+<p>之后成绩还算不错, 月考和期中考成绩进步幅度比较大.</p>
+<p>一些好朋友都走上了通宵上网等不归路, 于是我跟班里的几个学霸「勾搭」上了, 学到了很多, 只是有时候跟他们中的异性接触过多会被班里一些人说闲话.</p>
+<p>因为经常和他们一起交流, 我又觉得操着一口方言 (跟上一群狐朋狗友学来的) 很没有排面, 所以下定决定改掉了这个问题, 到现在除了必要的场合我都没说过一句方言, 还是普通话大法好.</p>
+<p>同样是 10 月中旬, 参加了梦寐以求的 NOIP, 考试题目跟老师教的完全不在一个等级, 从那之后朋友一直拿「两小时退役」这个梗来调侃我.</p>
+<p>再后来就没什么好记的了, 平平淡淡到了现在, 圣诞节那几天因为个人的问题心情变差了几天, 感谢自己这次没把负能量传给别人.</p>
+<p>我现在写作问题很大, 正如你所看到的, 我的分段很多, 思路很乱, 这在考试的作文是非常不利的, 但我至今没想到用什么方法去改变.</p>
+<blockquote>
+<p>成长的一个标志就是发现自己的以前是多么的沙雕.</p>
+</blockquote>
+<p>挺喜欢这句话的, 回看我上半年的经历, 大多都很幼稚, 说的话也都很孩子气, 我希望能在今后能彻底改掉这个毛病. 2018 还有很多不足之处, 2019 继续努力吧.</p>
 
 
                 <hr>
-    <!-- donate code -->
-<script src="/js/jquery.min.js">
-</script><link rel="stylesheet" href="https://spencerwoo.com/css/donate.css">
-<script src="/js/donate.js"></script>
-
-<div class="post_reward" >
-    <label class="reward_btn">打赏一发吗?</label>
-    <div class="qr_code">
-        <div class="qr_code_img">
-            <img class="image" src="https://ws3.sinaimg.cn/large/006tKfTcly1fsgsp2avwkj30pg0phwj7.jpg" title="WeChat">
-        </div>
-
-        <div class="qr_code_img">
-            <img class="image" src="https://ws2.sinaimg.cn/large/006tKfTcly1fsgsp22mfqj30pg0ph0x8.jpg" title="AliPay">
-        </div>
-    <div class="powered_text">
-    Powered by <a href="https://github.com/spencerwoo98/sexy-donate">SexyDonate</a>
-        </div>
-</div>
-
 
 </div>
 
@@ -246,13 +199,9 @@
                 <ul class="pager">
                     
                         <li class="previous">
-                            <a href="/myfirends/" data-toggle="tooltip" data-placement="top" title="I have no firend.">&larr; Previous Post</a>
+                            <a href="/backagain/" data-toggle="tooltip" data-placement="top" title="Hello World">&larr; Previous Post</a>
                         </li>
                     
-                    
-                        <li class="next">
-                            <a href="/open-case/" data-toggle="tooltip" data-placement="top" title="404 Title Not Found.">Next Post &rarr;</a>
-                        </li>
                     
                 </ul>
 
@@ -287,7 +236,7 @@
                 <ul class="list-inline">
 
                     
-                        <li><a href="https://www.bolitao.xyz/" target="_blank">KARA</a></li>
+                        <li><a href="https://www.bolitao.xyz/" target="_blank">kara</a></li>
                     
                         <li><a href="https://spencerwoo.com" target="_blank">Spencer Woo</a></li>
                     
@@ -312,8 +261,8 @@
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "ricky-4";
-    var disqus_identifier = "https://ricky29.tech/windows-desktop/";
-    var disqus_url = "https://ricky29.tech/windows-desktop/";
+    var disqus_identifier = "https://ricky29.tech/whasup2019/";
+    var disqus_url = "https://ricky29.tech/whasup2019/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -371,15 +320,15 @@
                 <ul class="list-inline text-center">
                 
                 
+                
                     <li>
-                        <a target="_blank" href="https://twitter.com/ruiqi521999">
+                        <a target="_blank" href="https://www.zhihu.com/people/wei-guang-qing-cheng-13">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
                             </span>
                         </a>
                     </li>
-                
                 
 
                 
@@ -425,9 +374,9 @@
                     <span style="display: inline-block; margin: 0 5px;">
                         <i class="fa fa-star"></i>
                     </span> 
-                    RicKy</a><br>
+                    RiCKY</a><br>
                     <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-                    每日一图 by <a href="https://Unsplash.com">Unsplash</a><br>
+                    2018 - 2019</a><br>
                 </p>
             </div>
         </div>

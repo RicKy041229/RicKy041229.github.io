@@ -36,10 +36,8 @@
     <!-- ga & ba script hoook -->
     <script></script>
 
-    <!-- donate JS -->
-    <script src="https://cdn.bootcss.com/jquery/3.3.1/core.js"></script>
-    <link rel="stylesheet" href="https://spencerwoo.com/css/donate.css">
-    <script src="https://spencerwoo.com/js/donate.js"></script>
+    <!-- Valine -->
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 </head>
 
 
@@ -144,9 +142,7 @@
                 <div class="site-heading">
                     <h1>Tags</h1>
                     <hr class="small">
-                    <script type="text/javascript" src="https://api.imjad.cn/hitokoto/?cat=&charset=utf-8&length=50&encode=js&fun=sync&source=">
-                    </script>
-                        <script>hitokoto()</script>
+                    <span class="subheading">Hey, this is Tags.</span>
                 </div>
             </div>
         </div>
@@ -169,106 +165,12 @@
             <!-- 标签云 -->
             <div id='tag_cloud' class="tags">
                 
-                    <a href="#教程" title="教程" rel="3">教程</a>
-                
-                    <a href="#开箱" title="开箱" rel="1">开箱</a>
-                
                     <a href="#日常" title="日常" rel="1">日常</a>
                 
             </div>
 
             <!-- 标签列表 -->
 
-            
-            <div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="教程">
-                    <span class="tag-text">教程</span>
-                </span>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <div class="post-preview">
-                     <a href="/make-a-blog/">
-                        <h2 class="post-title">
-                            用 Hexo+NexT 搭建个人博客 (一)
-                        </h2>
-                        
-                            <h3 class="post-subtitle">
-                                搭建博客的教程 Part1
-                            </h3>
-                        
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </div>
-                <hr>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <div class="post-preview">
-                     <a href="/make-a-blog2/">
-                        <h2 class="post-title">
-                            用 Hexo+NexT 搭建个人博客 (二)
-                        </h2>
-                        
-                            <h3 class="post-subtitle">
-                                搭建博客的教程 Part2
-                            </h3>
-                        
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </div>
-                <hr>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <div class="post-preview">
-                     <a href="/windows-desktop/">
-                        <h2 class="post-title">
-                            如何美化 Windows10 桌面
-                        </h2>
-                        
-                            <h3 class="post-subtitle">
-                                简洁 | 耐看
-                            </h3>
-                        
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </div>
-                <hr>
-                
-            </div>
-            
-            <div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="开箱">
-                    <span class="tag-text">开箱</span>
-                </span>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <div class="post-preview">
-                     <a href="/open-case/">
-                        <h2 class="post-title">
-                            404 Title Not Found.
-                        </h2>
-                        
-                            <h3 class="post-subtitle">
-                                我是真的起不出什么好标题了
-                            </h3>
-                        
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </div>
-                <hr>
-                
-            </div>
             
             <div class="one-tag-list">
                 <span class="fa fa-tag listing-seperator" id="日常">
@@ -280,13 +182,13 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
                  <div class="post-preview">
-                     <a href="/windows-desktop/">
+                     <a href="/whasup2019/">
                         <h2 class="post-title">
-                            如何美化 Windows10 桌面
+                            2019来啦！
                         </h2>
                         
                             <h3 class="post-subtitle">
-                                简洁 | 耐看
+                                新年快乐！
                             </h3>
                         
                     </a>
@@ -312,15 +214,15 @@
                 <ul class="list-inline text-center">
                 
                 
+                
                     <li>
-                        <a target="_blank" href="https://twitter.com/ruiqi521999">
+                        <a target="_blank" href="https://www.zhihu.com/people/wei-guang-qing-cheng-13">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
                             </span>
                         </a>
                     </li>
-                
                 
 
                 
@@ -366,9 +268,9 @@
                     <span style="display: inline-block; margin: 0 5px;">
                         <i class="fa fa-star"></i>
                     </span> 
-                    RicKy</a><br>
+                    RiCKY</a><br>
                     <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-                    每日一图 by <a href="https://Unsplash.com">Unsplash</a><br>
+                    2018 - 2019</a><br>
                 </p>
             </div>
         </div>
